@@ -1,0 +1,1995 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#343A75">
+<title>EMFACE in Franklin, TN | Williamson Aesthetics &amp; Wellness</title>
+<meta name="description" content="Needle-free EMFACE facial lifting in Franklin, TN. 20-minute sessions, no downtime. Book a free consultation and save 20% on your EMFACE series.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/web_emface-page-overview-navy.webp" fetchpriority="high">
+<style>
+/* Williamson Aesthetics & Wellness, EMFACE landing page.
+   Desktop is drawn on a 1440px artboard. --u is one artboard pixel:
+   exactly 1px when the page is 1440px wide, scaling fluidly between
+   64rem and 1920px. Above 1920px the layout stops growing and centers. */
+
+*, *::before, *::after { box-sizing: border-box; min-width: 0; }
+
+:root {
+  interpolate-size: allow-keywords;
+  scrollbar-gutter: stable;
+  overflow-wrap: break-word;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+
+  /* fluid artboard unit (JS writes --vw from clientWidth, CSS falls back to 100vw) */
+  --vw: 100vw;
+  --u: calc(min(var(--vw), 1920px) / 1440);
+  --pad: max(calc(80 * var(--u)), calc((100% - calc(1280 * var(--u))) / 2));
+  --edge: max(0px, calc((100% - calc(1440 * var(--u))) / 2));
+
+  /* brand */
+  --ink: oklch(28.429% 0.1456 263.16);      /* #001D70 */
+  --peri: oklch(58.147% 0.1400 276.90);     /* #6770CC */
+  --lav: oklch(78.538% 0.0730 278.49);      /* #AEB5E8 */
+  --indigo: oklch(37.550% 0.0998 276.11);   /* #343A75 */
+  --navy: oklch(23.139% 0.0517 278.34);     /* #181A35 */
+  --cream: oklch(97.680% 0.0067 277.16);    /* #F6F7FC */
+  --rule: oklch(86.185% 0.0364 276.98);     /* #CBD0EA */
+  --mist: oklch(93.660% 0.0190 279.52);     /* #E7E9F7 */
+  --white: oklch(100% 0 none);
+
+  --ink-70: color-mix(in oklch, var(--ink) 70%, transparent);
+  --ink-55: color-mix(in oklch, var(--ink) 55%, transparent);
+  --white-80: color-mix(in oklch, var(--white) 80%, transparent);
+  --white-70: color-mix(in oklch, var(--white) 70%, transparent);
+  --white-60: color-mix(in oklch, var(--white) 60%, transparent);
+  --white-40: color-mix(in oklch, var(--white) 40%, transparent);
+  --white-20: color-mix(in oklch, var(--white) 20%, transparent);
+  --white-15: color-mix(in oklch, var(--white) 15%, transparent);
+  --white-10: color-mix(in oklch, var(--white) 10%, transparent);
+  --white-05: color-mix(in oklch, var(--white) 5%, transparent);
+  --peri-10: color-mix(in oklch, var(--peri) 10%, transparent);
+  --peri-deep: color-mix(in oklch, var(--peri), black 22%);
+
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Lato", "Helvetica Neue", Arial, sans-serif;
+
+  /* motion tokens (from the site audit) */
+  --ease-swap: cubic-bezier(.65, 0, .35, 1);
+  --ease-css: cubic-bezier(.25, .1, .25, 1);
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+
+  color-scheme: light;
+}
+
+html { background: var(--navy); }
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: normal;
+}
+h1, h2, h3, h4 { margin: 0; font-weight: 400; }
+/* the desktop artboard keeps Pencil's greedy line breaks, smaller screens get balanced ones */
+@media (width < 64rem), (orientation: portrait) and (width < 75rem) {
+  :root { text-wrap: pretty; }
+  h1, h2, h3, h4 { text-wrap: balance; }
+}
+.nw { white-space: nowrap; }
+p, figure, blockquote, dl, dd, ul, ol { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img, svg, video, iframe { display: block; max-width: 100%; }
+img { height: auto; }
+em { font-style: italic; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+input, textarea, select { font: inherit; }
+button, a, [role="button"] { touch-action: manipulation; }
+button, [role="button"] { user-select: none; -webkit-user-select: none; }
+
+:focus-visible { outline: max(2px, 0.08em) solid currentColor; outline-offset: 0.25em; }
+.sr-only { position: absolute; inline-size: 1px; block-size: 1px; overflow: clip; clip-path: inset(50%); white-space: nowrap; }
+.skip { position: fixed; inset-block-start: 8px; inset-inline-start: 8px; z-index: 100; padding: 10px 16px; background: var(--ink); color: var(--white); translate: 0 -200%; }
+.skip:focus-visible { translate: 0 0; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html:not(.has-lenis) { scroll-behavior: smooth; }
+}
+section[id] { scroll-margin-block-start: calc(72 * var(--u)); }
+
+/* -------------------------------------------------- shared atoms */
+.eyebrow { font: 700 max(12px, calc(13 * var(--u)))/normal var(--sans); letter-spacing: calc(.2 * var(--u)); color: var(--peri); }
+.eyebrow--lav { color: var(--lav); }
+
+/* circle-arrow CTA */
+.cta { display: inline-flex; align-items: center; gap: calc(14 * var(--u)); color: var(--ink); align-self: start; }
+.cta__label { font: 400 max(14.76px, calc(18 * var(--u)))/normal var(--sans); letter-spacing: calc(.7 * var(--u)); transition: color .2s var(--ease-css); }
+.cta--light { color: var(--white); }
+.disc {
+  position: relative; flex: none;
+  inline-size: calc(60 * var(--u)); block-size: calc(60 * var(--u)); border-radius: 50%;
+  background: var(--peri); overflow: clip;
+}
+.glyph { position: absolute; inset: 0; display: grid; place-items: center; }
+.glyph svg { inline-size: calc(30 * var(--u)); block-size: calc(4 * var(--u)); overflow: visible; }
+.glyph path { fill: none; stroke: var(--white); stroke-width: calc(1.5 * var(--u)); stroke-linecap: round; stroke-linejoin: round; }
+.glyph--in { transform: translateX(-100%); }
+@media (prefers-reduced-motion: no-preference) {
+  .glyph { transition: transform .8s var(--ease-swap); }
+  .cta, .form__submit, .qopt, .console__back, .vcard__play { transition: scale .12s var(--ease-out); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .cta:hover .cta__label { color: var(--peri); }
+  .cta:hover .glyph--out { transform: translateX(100%); }
+  .cta:hover .glyph--in { transform: translateX(0); transition-delay: .15s; }
+}
+/* tap state on touch screens */
+.cta.is-tap .cta__label { color: var(--peri); }
+.cta.is-tap .glyph--out { transform: translateX(100%); }
+.cta.is-tap .glyph--in { transform: translateX(0); transition-delay: .15s; }
+.cta:focus-visible .cta__label { color: var(--peri); }
+.cta:focus-visible .glyph--out { transform: translateX(100%); }
+.cta:focus-visible .glyph--in { transform: translateX(0); transition-delay: .15s; }
+.cta:active, .form__submit:active, .qopt:active, .vcard__play:active { scale: .98; }
+
+.cta-row { display: flex; align-items: center; gap: calc(40 * var(--u)); }
+.call { font: 400 max(13.12px, calc(16 * var(--u)))/normal var(--sans); color: var(--white-80); transition: color .15s var(--ease-css); }
+@media (hover: hover) and (pointer: fine) { .call:hover { color: var(--lav); } }
+/* tap state on touch screens */
+.call.is-tap { color: var(--lav); }
+
+/* text link with arrow (ghost link, gap grows on hover) */
+.more { display: inline-flex; align-items: center; gap: calc(12 * var(--u)); font: 400 max(12.3px, calc(15 * var(--u)))/normal var(--sans); letter-spacing: calc(.6 * var(--u)); color: var(--peri); transition: gap .2s var(--ease-css), color .2s var(--ease-css); }
+.more svg { inline-size: calc(26 * var(--u)); block-size: calc(3 * var(--u)); overflow: visible; flex: none; }
+.more path { fill: none; stroke: currentColor; stroke-width: calc(1.5 * var(--u)); stroke-linecap: round; stroke-linejoin: round; }
+@media (hover: hover) and (pointer: fine) { .more:hover { gap: calc(17 * var(--u)); color: var(--ink); } }
+/* tap state on touch screens */
+.more.is-tap { gap: calc(17 * var(--u)); color: var(--ink); }
+.more:focus-visible { gap: calc(17 * var(--u)); }
+
+.stars { display: flex; gap: calc(4 * var(--u)); color: var(--peri); }
+.stars svg { inline-size: calc(16 * var(--u)); block-size: calc(16 * var(--u)); fill: currentColor; flex: none; }
+
+/* -------------------------------------------------- header */
+.bar {
+  position: fixed; inset-block-start: 0; inset-inline: 0; z-index: 40;
+  background: oklch(from var(--white) l c h / 0);
+  box-shadow: inset 0 -1px 0 oklch(from var(--white) l c h / .18);
+  -webkit-backdrop-filter: blur(0); backdrop-filter: blur(0);
+  transition: background-color .35s var(--ease-css), box-shadow .35s var(--ease-css), backdrop-filter .35s var(--ease-css);
+}
+.bar.is-solid {
+  background: oklch(from var(--white) l c h / .72);
+  box-shadow: inset 0 -1px 0 oklch(from var(--rule) l c h / .7), 0 8px 30px oklch(from var(--navy) l c h / .06);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4); backdrop-filter: blur(16px) saturate(1.4);
+}
+.bar__in {
+  block-size: calc(72 * var(--u));
+  padding-inline: var(--pad);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.bar__logo { display: grid; }
+.bar__logo img { grid-area: 1 / 1; inline-size: auto; block-size: calc(46 * var(--u)); transition: opacity .35s var(--ease-css); }
+.bar__logo-dark, .bar.is-solid .bar__logo-light { opacity: 0; }
+.bar.is-solid .bar__logo-dark { opacity: 1; }
+.bar__nav { display: flex; align-items: center; gap: calc(44 * var(--u)); }
+.bar__nav a { font: 400 max(13.12px, calc(16 * var(--u)))/normal var(--sans); letter-spacing: calc(.6 * var(--u)); color: var(--white); transition: color .15s var(--ease-css); }
+.bar.is-solid .bar__nav a, .bar.is-solid .cta--bar { color: var(--ink); }
+.cta--bar { color: var(--white); transition: color .35s var(--ease-css); }
+@media (hover: hover) and (pointer: fine) { .bar__nav a:hover { color: var(--lav); } .bar.is-solid .bar__nav a:hover { color: var(--peri); } }
+/* tap state on touch screens */
+.bar__nav a.is-tap { color: var(--lav); }
+.bar.is-solid .bar__nav a.is-tap { color: var(--peri); }
+.cta--bar { gap: calc(12 * var(--u)); align-self: center; }
+.cta--bar .disc { inline-size: calc(40 * var(--u)); block-size: calc(40 * var(--u)); }
+.cta--bar .glyph svg { inline-size: calc(20 * var(--u)); block-size: calc(3 * var(--u)); }
+.cta--bar .cta__label { font-size: max(13.12px, calc(16 * var(--u))); letter-spacing: calc(.6 * var(--u)); }
+
+/* -------------------------------------------------- hero (sticky curtain) */
+main > section { position: relative; z-index: 1; }
+.hero {
+  --hero-h: 100svh;
+  position: sticky; z-index: 0;
+  inset-block-start: 0;
+  block-size: var(--hero-h);
+  background: var(--indigo);
+  overflow: clip;
+}
+/* the photo layer is sized like object-fit: cover, so the zone markers stay glued to the face at any height */
+.hero__media { position: absolute; inset-block: 0; inset-inline-start: var(--edge); inset-inline-end: 0; container-type: size; overflow: clip; --fx: .5; --fy: .3; }
+.face {
+  position: absolute;
+  inline-size: max(100cqw, 160cqh); block-size: max(100cqh, 62.5cqw);
+  inset-inline-start: calc((100cqw - max(100cqw, 160cqh)) * var(--fx));
+  inset-block-start: calc((100cqh - max(100cqh, 62.5cqw)) * var(--fy));
+  container-type: inline-size;
+}
+.hero__photo { display: block; inline-size: 100%; block-size: 100%; max-inline-size: none; }
+.face--spots { pointer-events: none; }
+.hero__stage { position: relative; inline-size: calc(1440 * var(--u)); block-size: 100%; margin-inline: auto; pointer-events: none; }
+.hero__scrim {
+  position: absolute; inset-block: 0; inset-inline-start: 0; inline-size: calc(1100 * var(--u));
+  background: linear-gradient(90deg, var(--indigo) 0%, var(--indigo) 50%, oklch(from var(--indigo) l c h / 0) 100%);
+}
+.hero__copy { pointer-events: auto; position: absolute; inset-inline-start: calc(80 * var(--u)); inset-block: 0; inline-size: calc(620 * var(--u)); padding-block: calc(72 * var(--u)) calc(29 * var(--u)); display: flex; flex-direction: column; justify-content: center; }
+/* hero copy unit: the artboard unit, capped so the copy always fits inside one screen height */
+.hero__copy > * { --u: min(calc(min(var(--vw), 1920px) / 1440), calc(100svh / 720)); }
+.hero__copy .eyebrow { margin-block-end: calc(24 * var(--u)); }
+.hero__title { font-family: var(--serif); font-size: calc(72 * var(--u)); color: var(--white); display: flex; flex-direction: column; }
+.hero__l1 { line-height: round(1.05em, 1px); }
+.hero__l2 { line-height: round(1.15em, 1px); color: var(--lav); }
+.hero__sub { margin-block-start: calc(28 * var(--u)); inline-size: calc(520 * var(--u)); font: 400 max(14.76px, calc(18 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--white-80); }
+.pill {
+  margin-block-start: calc(36 * var(--u)); align-self: start;
+  display: inline-flex; align-items: center; gap: calc(10 * var(--u));
+  padding: calc(10 * var(--u)) calc(20 * var(--u)); border-radius: 999px;
+  background: var(--white-10); box-shadow: inset 0 0 0 1px var(--lav);
+}
+.pill strong { font: 500 max(14.76px, calc(18 * var(--u)))/normal var(--serif); color: var(--white); }
+.pill span { font: 400 max(12.3px, calc(15 * var(--u)))/normal var(--sans); color: var(--white-80); }
+.hero .cta-row { margin-block-start: calc(32 * var(--u)); }
+
+/* zone markers: one design pixel of the photo layer is --p */
+.spot {
+  --p: calc(100cqw / 1440);
+  pointer-events: auto; position: absolute; cursor: pointer;
+  inset-inline-start: calc(790 * var(--p)); inset-block-start: calc(var(--ly) * var(--p));
+  inline-size: calc(var(--w) * var(--p)); block-size: calc(48 * var(--p));
+  text-align: start; color: var(--white);
+}
+.spot > * { position: absolute; }
+.spot__label { inset: 0 auto auto 0; inline-size: calc(150 * var(--p)); display: flex; flex-direction: column; gap: calc(2 * var(--u)); }
+.spot__zone { font: 500 max(18.04px, calc(22 * var(--u)))/normal var(--serif); color: var(--white); transition: color .2s var(--ease-css); }
+.spot__act { font: 400 max(12px, calc(14 * var(--u)))/normal var(--sans); color: var(--lav); }
+.spot__line { inset-inline-start: calc(160 * var(--p)); inset-block-start: calc(25 * var(--p)); inline-size: calc(var(--lnw) * var(--p)); block-size: calc(2 * var(--u)); background: var(--white-70); transform-origin: right center; transition: background-color .2s var(--ease-css); }
+.spot__mk { inset-inline-start: calc(var(--mkx) * var(--p)); inset-block-start: calc(17 * var(--p)); inline-size: calc(18 * var(--p)); block-size: calc(18 * var(--p)); display: grid; place-items: center; }
+.spot__mk::before { content: ""; position: absolute; inset: calc(-9 * var(--p)); border-radius: 50%; box-shadow: inset 0 0 0 1px var(--white-40); background: oklch(from var(--white) l c h / 0); transition: background-color .25s var(--ease-css), box-shadow .25s var(--ease-css); }
+.spot__mk .plus { position: relative; inline-size: 100%; block-size: 100%; }
+.spot__mk .plus path { stroke: var(--white); transition: stroke .2s var(--ease-css); }
+.spot--brow { --ly: 236; --w: 337; --lnw: 150; --mkx: 319; }
+.spot--cheeks { --ly: 372; --w: 289; --lnw: 102; --mkx: 271; }
+.spot--jaw { --ly: 474; --w: 309; --lnw: 122; --mkx: 291; }
+@media (prefers-reduced-motion: no-preference) {
+  .spot__mk .plus { transition: rotate .35s var(--ease-out); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .spot:hover .spot__zone { color: var(--lav); }
+  .spot:hover .spot__line { background: var(--white); }
+  .spot:hover .spot__mk::before { background: var(--white); box-shadow: inset 0 0 0 1px var(--white); }
+  .spot:hover .spot__mk .plus { rotate: 90deg; }
+  .spot:hover .spot__mk .plus path { stroke: var(--ink); }
+}
+.spot:focus-visible { outline: none; }
+.spot:focus-visible .spot__mk::before { box-shadow: inset 0 0 0 2px var(--white); }
+.spot:focus-visible .spot__zone { text-decoration: underline; text-underline-offset: .2em; }
+.spot[aria-expanded="true"] .spot__mk::before { background: var(--white); box-shadow: inset 0 0 0 1px var(--white); }
+.spot[aria-expanded="true"] .spot__mk .plus { rotate: 45deg; }
+.spot[aria-expanded="true"] .spot__mk .plus path { stroke: var(--ink); }
+.spot[aria-expanded="true"] .spot__zone { color: var(--lav); }
+
+/* zone detail card (native popover, positioned next to its marker by script) */
+.zone-card {
+  position: fixed; inset: auto; margin: 0;
+  inline-size: calc(340 * var(--u)); max-block-size: calc(100svh - 32px); overflow: auto;
+  padding: calc(24 * var(--u)) calc(26 * var(--u)) calc(22 * var(--u)); color: var(--white);
+  background: linear-gradient(160deg, oklch(from var(--white) l c h / .2), oklch(from var(--white) l c h / .04)), oklch(from var(--navy) l c h / .42);
+  -webkit-backdrop-filter: blur(22px) saturate(1.5); backdrop-filter: blur(22px) saturate(1.5);
+  border: 1px solid oklch(from var(--white) l c h / .32); border-radius: calc(14 * var(--u));
+  box-shadow: inset 0 1px 0 oklch(from var(--white) l c h / .35), 0 24px 60px oklch(from var(--navy) l c h / .35);
+}
+.zone-card:popover-open { display: flex; flex-direction: column; gap: calc(12 * var(--u)); }
+.zone-card::backdrop { background: oklch(from var(--navy) l c h / 0); }
+.zone-card .eyebrow { color: var(--lav); }
+.zone-card__top { display: flex; align-items: center; justify-content: space-between; }
+.zone-card__close { position: relative; inline-size: calc(20 * var(--u)); block-size: calc(20 * var(--u)); display: grid; place-items: center; color: var(--white); }
+.zone-card__close::after { content: ""; position: absolute; inset: min(0px, calc((100% - 44px) / 2)); }
+.zone-card__close .plus { inline-size: calc(16 * var(--u)); block-size: calc(16 * var(--u)); rotate: 45deg; }
+.zone-card__close .plus path { stroke: var(--white); transition: stroke .15s var(--ease-css); }
+@media (hover: hover) and (pointer: fine) { .zone-card__close:hover .plus path { stroke: var(--lav); } }
+.zone-card__title { font: 400 max(24.6px, calc(30 * var(--u)))/round(1.1em, 1px) var(--serif); color: var(--white); }
+.zone-card__title em { color: var(--lav); }
+.zone-card__body { font: 400 max(12.3px, calc(15 * var(--u)))/round(1.6em, 1px) var(--sans); color: oklch(from var(--white) l c h / .9); }
+.zone-card__facts { display: flex; flex-direction: column; }
+.zone-card__facts > div { display: flex; flex-direction: column; gap: calc(2 * var(--u)); padding: calc(10 * var(--u)) 0 0; margin-block-start: calc(10 * var(--u)); box-shadow: inset 0 1px 0 oklch(from var(--white) l c h / .22); }
+.zone-card__facts dt { font: 700 max(12px, calc(13 * var(--u)))/normal var(--sans); color: var(--lav); }
+.zone-card__facts dd { font: 400 max(12.3px, calc(15 * var(--u)))/round(1.45em, 1px) var(--sans); color: var(--white); }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .zone-card { background: oklch(from var(--indigo) l c h / .96); }
+}
+.plus { overflow: visible; }
+.plus path { fill: none; stroke-width: calc(1.5 * var(--u)); stroke-linecap: round; stroke-linejoin: round; }
+
+/* -------------------------------------------------- stats */
+.stats { background: var(--white); padding: calc(88 * var(--u)) var(--pad) calc(96 * var(--u)); }
+.stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: calc(40 * var(--u)); }
+.stat { box-shadow: inset 0 1px 0 var(--rule); padding-block-start: calc(24 * var(--u)); display: flex; flex-direction: column; gap: calc(14 * var(--u)); }
+.stat__fig { display: flex; align-items: flex-end; gap: calc(10 * var(--u)); }
+.stat__num { font: 400 calc(120 * var(--u))/1 var(--serif); color: var(--ink); font-variant-numeric: tabular-nums; }
+.stat__unit { padding-block-end: calc(16 * var(--u)); font: italic 400 max(32.8px, calc(40 * var(--u)))/normal var(--serif); color: var(--peri); }
+.stat__label { font: 500 max(16.4px, calc(20 * var(--u)))/normal var(--serif); color: var(--ink); }
+.stat__body { font: 400 max(12.3px, calc(15 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--ink-70); }
+
+/* -------------------------------------------------- quiz */
+.quiz { background: var(--indigo); padding: calc(120 * var(--u)) var(--pad); display: flex; align-items: center; gap: calc(80 * var(--u)); }
+.quiz__intro { inline-size: calc(480 * var(--u)); flex: none; display: flex; flex-direction: column; gap: calc(24 * var(--u)); }
+.quiz__title { font-family: var(--serif); font-size: calc(60 * var(--u)); color: var(--white); display: flex; flex-direction: column; }
+.quiz__title > span:first-child { line-height: round(1.1em, 1px); }
+.quiz__t2 { display: flex; align-items: flex-end; gap: calc(16 * var(--u)); padding-block-end: calc(6 * var(--u)); line-height: round(1.15em, 1px); }
+.quiz__t2 em { color: var(--lav); }
+.quiz__body { font: 400 max(13.94px, calc(17 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--white-80); }
+
+.console { flex: 1; background: var(--navy); box-shadow: inset 0 0 0 1px var(--white-20); padding: calc(48 * var(--u)); display: flex; flex-direction: column; gap: calc(32 * var(--u)); }
+.console__top { display: flex; align-items: center; justify-content: space-between; }
+.console__step { font: 700 max(12px, calc(14 * var(--u)))/normal var(--sans); color: var(--lav); }
+.console__back { font: 400 max(12.3px, calc(15 * var(--u)))/normal var(--sans); color: var(--white-70); transition: color .15s var(--ease-css), opacity .2s var(--ease-css); }
+.console__back[disabled] { opacity: .3; cursor: default; }
+@media (hover: hover) and (pointer: fine) { .console__back:not([disabled]):hover { color: var(--white); } }
+/* tap state on touch screens */
+.console__back:not([disabled]).is-tap { color: var(--white); }
+.console__progress { display: flex; gap: calc(6 * var(--u)); }
+.console__progress span { flex: 1; block-size: calc(4 * var(--u)); background: var(--white-20); transition: background-color .3s var(--ease-css); }
+.console__progress span.is-done { background: var(--peri); }
+.console__q { display: flex; flex-direction: column; gap: calc(32 * var(--u)); }
+.console__question { font: 400 max(29.52px, calc(36 * var(--u)))/round(1.2em, 1px) var(--serif); color: var(--white); }
+.console__options { display: grid; grid-template-columns: 1fr 1fr; gap: calc(32 * var(--u)) calc(16 * var(--u)); }
+.console__summary { font: 400 max(13.94px, calc(17 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--white-80); }
+.qopt {
+  min-block-size: calc(84 * var(--u)); padding: 0 calc(24 * var(--u));
+  display: flex; align-items: center; justify-content: space-between; gap: calc(16 * var(--u));
+  background: var(--white-05); box-shadow: inset 0 0 0 1px var(--white-20);
+  text-align: start;
+  transition: background-color .2s var(--ease-css), box-shadow .2s var(--ease-css), scale .12s var(--ease-out);
+}
+.qopt__label { flex: 1; font: 400 max(13.94px, calc(17 * var(--u)))/round(1.4em, 1px) var(--sans); color: var(--white); }
+.qopt__box { flex: none; inline-size: calc(24 * var(--u)); block-size: calc(24 * var(--u)); border: 1px solid var(--white-40); display: grid; place-items: center; transition: background-color .2s var(--ease-css), border-color .2s var(--ease-css); }
+.qopt__box svg { inline-size: calc(13 * var(--u)); block-size: calc(10 * var(--u)); opacity: 0; transition: opacity .15s var(--ease-css); }
+.check path { fill: none; stroke: var(--white); stroke-width: calc(2 * var(--u)); stroke-linecap: round; stroke-linejoin: round; }
+.qopt[aria-pressed="true"] { background: var(--peri-10); box-shadow: inset 0 0 0 1px var(--lav); }
+.qopt[aria-pressed="true"] .qopt__box { background: var(--peri); border-color: var(--peri); }
+.qopt[aria-pressed="true"] .qopt__box svg { opacity: 1; }
+@media (hover: hover) and (pointer: fine) { .qopt:hover { box-shadow: inset 0 0 0 1px var(--lav); } }
+/* tap state on touch screens */
+.qopt.is-tap { box-shadow: inset 0 0 0 1px var(--lav); }
+.console__result { box-shadow: inset 0 1px 0 var(--white-20); padding-block-start: calc(28 * var(--u)); display: flex; align-items: center; justify-content: space-between; gap: calc(24 * var(--u)); }
+.console__rtext { display: flex; flex-direction: column; gap: calc(6 * var(--u)); }
+.console__r1 { font: 400 max(12px, calc(14 * var(--u)))/normal var(--sans); color: var(--white-70); }
+.console__r2 { font: 500 max(18.04px, calc(22 * var(--u)))/normal var(--serif); color: var(--white); }
+.cta--btn { align-self: center; flex: none; }
+
+/* -------------------------------------------------- before / after */
+.ba { background: var(--cream); padding: calc(100 * var(--u)) var(--pad); display: flex; flex-direction: column; gap: calc(48 * var(--u)); }
+.ba__head { display: flex; align-items: flex-end; justify-content: space-between; gap: calc(40 * var(--u)); }
+.ba__title { font-family: var(--serif); font-size: calc(52 * var(--u)); line-height: round(1.12em, 1px); color: var(--ink); display: flex; flex-direction: column; }
+.ba__l2 { display: flex; align-items: flex-end; gap: calc(14 * var(--u)); }
+.ba__l2 em { color: var(--peri); }
+.ba__note { font: 400 max(12.3px, calc(15 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--ink-70); }
+.ba__tiles { display: flex; flex-direction: column; gap: calc(32 * var(--u)); }
+.ba__ctas { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: calc(24 * var(--u)) calc(56 * var(--u)); padding-block-start: calc(8 * var(--u)); }
+.ba__ctas .cta { align-self: center; }
+.cta--outline .disc { background: transparent; box-shadow: inset 0 0 0 1px var(--ink); transition: background-color .2s var(--ease-css), box-shadow .2s var(--ease-css); }
+.cta--outline .glyph path { stroke: var(--ink); transition: stroke .2s var(--ease-css); }
+@media (hover: hover) and (pointer: fine) {
+  .cta--outline:hover .disc { background: var(--peri); box-shadow: inset 0 0 0 1px var(--peri); }
+  .cta--outline:hover .glyph path { stroke: var(--white); }
+}
+/* tap state on touch screens */
+.cta--outline.is-tap .disc { background: var(--peri); box-shadow: inset 0 0 0 1px var(--peri); }
+.cta--outline.is-tap .glyph path { stroke: var(--white); }
+.cta--outline:focus-visible .disc { background: var(--peri); box-shadow: inset 0 0 0 1px var(--peri); }
+.cta--outline:focus-visible .glyph path { stroke: var(--white); }
+.ba-tile { background: var(--white); outline: 1px solid var(--rule); outline-offset: -1px; }
+.ba-tile__img { overflow: clip; }
+.ba-tile__img img { inline-size: 100%; object-fit: cover; }
+.ba-tile:nth-child(1) .ba-tile__img img { block-size: calc(428 * var(--u)); }
+.ba-tile:nth-child(2) .ba-tile__img img { block-size: calc(425 * var(--u)); }
+.ba-tile__tags { display: grid; grid-template-columns: 1fr 1fr; box-shadow: inset 0 -1px 0 var(--rule); }
+.ba-tile__tags span { padding: calc(16 * var(--u)) calc(24 * var(--u)); font: 500 max(16.4px, calc(20 * var(--u)))/1 var(--serif); color: var(--ink); }
+.ba-tile__tags .is-after { color: var(--peri); box-shadow: inset 1px 0 0 var(--rule); }
+.ba-tile__cap { padding: calc(20 * var(--u)) calc(24 * var(--u)) calc(24 * var(--u)); display: flex; flex-direction: column; gap: calc(4 * var(--u)); }
+.ba-tile__area { font: 700 max(12px, calc(13 * var(--u)))/round(1.4em, 1px) var(--sans); color: var(--peri); }
+.ba-tile__text { font: 400 max(13.12px, calc(16 * var(--u)))/round(1.5em, 1px) var(--sans); color: var(--ink); }
+@media (prefers-reduced-motion: no-preference) {
+  .ba-tile__img img, .icard__img img, .member__img img, .interior img { transition: scale .5s var(--ease-css); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .ba-tile:hover .ba-tile__img img, .icard:hover .icard__img img, .member:hover .member__img img, .interior:hover img { scale: 1.04; }
+}
+/* tap state on touch screens */
+.ba-tile.is-tap .ba-tile__img img, .icard.is-tap .icard__img img, .member.is-tap .member__img img, .interior.is-tap img { scale: 1.04; }
+
+/* -------------------------------------------------- what is emface */
+.what { background: var(--white); padding: calc(112 * var(--u)) var(--pad); display: flex; align-items: center; gap: calc(80 * var(--u)); }
+.what__media { flex: none; display: flex; align-items: flex-end; gap: calc(24 * var(--u)); }
+.vcard { position: relative; overflow: clip; background: var(--navy); color: var(--white); }
+.vcard--a { inline-size: calc(330 * var(--u)); block-size: calc(587 * var(--u)); }
+.vcard--b { inline-size: calc(480 * var(--u)); block-size: calc(600 * var(--u)); flex: none; }
+.vcard__poster, .vcard video { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; object-fit: cover; }
+.vcard video { z-index: 3; background: var(--navy); }
+.vcard__scrim { position: absolute; inset-inline: 0; inset-block-end: 0; block-size: calc(240 * var(--u)); background: linear-gradient(180deg, oklch(from var(--navy) l c h / 0), oklch(from var(--navy) l c h / .9)); }
+.vcard--b .vcard__scrim { block-size: calc(260 * var(--u)); }
+.vcard__tag {
+  position: absolute; inset-inline-start: calc(20 * var(--u)); inset-block-start: calc(20 * var(--u));
+  padding: calc(6 * var(--u)) calc(12 * var(--u)); background: var(--white-15);
+  -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px);
+  font: 700 max(12px, calc(13 * var(--u)))/normal var(--sans); white-space: pre;
+}
+.vcard__play {
+  position: absolute; inset-inline-start: calc(133 * var(--u)); inset-block-start: calc(262 * var(--u));
+  inline-size: calc(64 * var(--u)); block-size: calc(64 * var(--u)); border-radius: 50%;
+  background: var(--white); color: var(--ink);
+  display: grid; place-items: center; padding-inline-start: calc(4 * var(--u));
+  transition: background-color .2s var(--ease-css), color .2s var(--ease-css), scale .12s var(--ease-out);
+}
+.vcard__play svg { inline-size: calc(16 * var(--u)); block-size: calc(18 * var(--u)); fill: currentColor; }
+.vcard__play::after { content: ""; position: absolute; inset: min(0px, calc((100% - 44px) / 2)); }
+.vcard--b .vcard__play { inset-inline-start: calc(208 * var(--u)); inset-block-start: calc(268 * var(--u)); }
+@media (hover: hover) and (pointer: fine) { .vcard:hover .vcard__play { background: var(--peri); color: var(--white); } }
+/* tap state on touch screens */
+.vcard.is-tap .vcard__play { background: var(--peri); color: var(--white); }
+.vcard__cap { position: absolute; inset-inline-start: calc(24 * var(--u)); inset-block-start: calc(487 * var(--u)); inline-size: calc(282 * var(--u)); display: flex; flex-direction: column; gap: calc(6 * var(--u)); }
+.vcard--b .vcard__cap { inset-inline-start: calc(28 * var(--u)); inset-block-start: calc(508 * var(--u)); inline-size: calc(424 * var(--u)); }
+.vcard__title { font: 500 max(18.04px, calc(22 * var(--u)))/normal var(--serif); }
+.vcard__body { font: 400 max(12.3px, calc(15 * var(--u)))/round(1.5em, 1px) var(--sans); color: var(--white-80); }
+.vcard.is-playing :is(.vcard__tag, .vcard__play, .vcard__cap, .vcard__scrim) { visibility: hidden; }
+
+.icard { inline-size: calc(300 * var(--u)); display: flex; flex-direction: column; }
+.icard__img { overflow: clip; }
+.icard__img img { inline-size: 100%; block-size: calc(300 * var(--u)); object-fit: cover; }
+.icard__cap { box-shadow: inset 0 1px 0 var(--rule); padding-block-start: calc(18 * var(--u)); display: flex; flex-direction: column; gap: calc(6 * var(--u)); }
+.icard__title { font: 500 max(18.04px, calc(22 * var(--u)))/normal var(--serif); color: var(--ink); }
+.icard__body { font: 400 max(12.3px, calc(15 * var(--u)))/round(1.5em, 1px) var(--sans); color: var(--ink-70); }
+
+.what__copy { flex: 1; display: flex; flex-direction: column; gap: calc(28 * var(--u)); }
+.what__title { font-family: var(--serif); font-size: calc(56 * var(--u)); line-height: round(1.1em, 1px); color: var(--ink); display: flex; flex-direction: column; gap: calc(28 * var(--u)); }
+.what__title em { color: var(--peri); }
+.what__intro { font: 400 max(13.94px, calc(17 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--ink-70); }
+.mechs { display: flex; gap: calc(32 * var(--u)); }
+.mech { flex: 1; box-shadow: inset 0 1px 0 var(--rule); padding-block-start: calc(18 * var(--u)); display: flex; flex-direction: column; gap: calc(10 * var(--u)); }
+.mech h3 { font: 400 max(21.32px, calc(26 * var(--u)))/normal var(--serif); color: var(--ink); }
+.mech p { font: 400 max(13.12px, calc(16 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--ink-70); transition: color .2s var(--ease-css); }
+.mech { position: relative; cursor: default; isolation: isolate; }
+.mech::after { content: ""; position: absolute; inset: 0 calc(-18 * var(--u)) calc(-20 * var(--u)); z-index: -1; background: var(--ink); box-shadow: 0 22px 48px oklch(from var(--ink) l c h / .28), 0 2px 6px oklch(from var(--ink) l c h / .12); opacity: 0; pointer-events: none; transition: opacity .35s var(--ease-css); }
+.mech::before { content: ""; position: absolute; inset-inline: calc(-18 * var(--u)); inset-block-start: 0; block-size: calc(3 * var(--u)); z-index: 1; background: var(--lav); transform: scaleX(0); transform-origin: left center; }
+.mech h3 { transition: color .2s var(--ease-css); }
+@media (prefers-reduced-motion: no-preference) {
+  .mech { transition: translate .45s var(--ease-out); }
+  .mech::after { transition: opacity .35s var(--ease-css), scale .45s var(--ease-out); scale: .96; }
+  .mech::before { transition: transform .5s var(--ease-out); }
+  .mech h3, .mech p { transition: color .2s var(--ease-css), translate .4s var(--ease-out); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .mech:hover { translate: 0 calc(-8 * var(--u)); }
+  .mech:hover::after { opacity: 1; scale: 1; }
+  .mech:hover::before { transform: scaleX(1); }
+  .mech:hover h3 { color: var(--white); translate: calc(4 * var(--u)) 0; }
+  .mech:hover p { color: var(--white-80); translate: calc(4 * var(--u)) 0; }
+}
+/* tap state on touch screens */
+.mech.is-tap { translate: 0 calc(-8 * var(--u)); }
+.mech.is-tap::after { opacity: 1; scale: 1; }
+.mech.is-tap::before { transform: scaleX(1); }
+.mech.is-tap h3 { color: var(--white); translate: calc(4 * var(--u)) 0; }
+.mech.is-tap p { color: var(--white-80); translate: calc(4 * var(--u)) 0; }
+.chips { display: flex; flex-direction: column; gap: calc(10 * var(--u)); }
+.chips ul { display: flex; flex-wrap: wrap; gap: calc(10 * var(--u)); }
+.chips li { block-size: calc(40 * var(--u)); padding: 0 calc(20 * var(--u)); border-radius: calc(20 * var(--u)); display: flex; align-items: center; background: var(--peri-10); box-shadow: inset 0 0 0 1px var(--lav); font: 400 max(12.3px, calc(15 * var(--u)))/normal var(--sans); color: var(--peri); }
+.chips li { transition: background-color .2s var(--ease-css), color .2s var(--ease-css), box-shadow .2s var(--ease-css); }
+@media (prefers-reduced-motion: no-preference) { .chips li { transition: background-color .2s var(--ease-css), color .2s var(--ease-css), box-shadow .2s var(--ease-css), translate .3s var(--ease-out); } }
+@media (hover: hover) and (pointer: fine) {
+  .chips li:hover { background: var(--peri); color: var(--white); box-shadow: inset 0 0 0 1px var(--peri); translate: 0 calc(-2 * var(--u)); }
+}
+/* tap state on touch screens */
+.chips li.is-tap { background: var(--peri); color: var(--white); box-shadow: inset 0 0 0 1px var(--peri); translate: 0 calc(-2 * var(--u)); }
+.what__cta { padding-block-start: calc(8 * var(--u)); }
+
+/* -------------------------------------------------- experience */
+.exp { background: var(--navy); padding: calc(120 * var(--u)) var(--pad); display: flex; align-items: center; justify-content: space-between; gap: calc(80 * var(--u)); overflow: clip; }
+.exp__bg { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; object-fit: cover; opacity: .25; z-index: -1; }
+.exp { isolation: isolate; }
+.exp__left { inline-size: calc(680 * var(--u)); display: flex; flex-direction: column; gap: calc(48 * var(--u)); }
+.exp__head { display: flex; flex-direction: column; gap: calc(20 * var(--u)); }
+.exp__title { font-family: var(--serif); font-size: calc(60 * var(--u)); line-height: round(1.15em, 1px); color: var(--white); display: flex; align-items: flex-end; flex-wrap: wrap; column-gap: calc(16 * var(--u)); padding-block-end: calc(6 * var(--u)); }
+.exp__title em { color: var(--lav); }
+.exp__sub { inline-size: calc(560 * var(--u)); font: 400 max(14.76px, calc(18 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--white-80); }
+.step { display: flex; gap: calc(32 * var(--u)); padding: calc(28 * var(--u)) 0; box-shadow: inset 0 1px 0 var(--white-20); }
+.step:last-child { box-shadow: inset 0 1px 0 var(--white-20), inset 0 -1px 0 var(--white-20); }
+.step__name { inline-size: calc(220 * var(--u)); flex: none; display: flex; flex-direction: column; gap: calc(8 * var(--u)); }
+.step__name h3 { font: 400 max(22.96px, calc(28 * var(--u)))/normal var(--serif); color: var(--white); }
+.step__name p { font: 700 max(12px, calc(13 * var(--u)))/normal var(--sans); letter-spacing: calc(.2 * var(--u)); color: var(--lav); }
+.step__body { flex: 1; font: 400 max(13.12px, calc(16 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--white-80); }
+.step { position: relative; }
+.step::before, .review::before { content: ""; position: absolute; inset-inline: 0; inset-block-start: 0; block-size: 1px; transform: scaleX(0); transform-origin: left center; pointer-events: none; }
+.step::before { background: var(--lav); }
+.step__name h3, .step__body, .step__name p { transition: color .2s var(--ease-css); }
+@media (prefers-reduced-motion: no-preference) {
+  .step::before, .review::before { transition: transform .5s var(--ease-out); }
+  .step__name, .step__body { transition: translate .4s var(--ease-out); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .step:hover::before { transform: scaleX(1); }
+  .step:hover .step__name h3 { color: var(--lav); }
+  .step:hover .step__body { color: var(--white); }
+  .step:hover .step__name, .step:hover .step__body { translate: calc(8 * var(--u)) 0; }
+}
+/* tap state on touch screens */
+.step.is-tap::before { transform: scaleX(1); }
+.step.is-tap .step__name h3 { color: var(--lav); }
+.step.is-tap .step__body { color: var(--white); }
+.step.is-tap .step__name, .step.is-tap .step__body { translate: calc(8 * var(--u)) 0; }
+.exp__note { font: 400 max(12.3px, calc(15 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--white-70); }
+
+/* -------------------------------------------------- comparison */
+.cmp { background: var(--white); padding: calc(112 * var(--u)) var(--pad) calc(120 * var(--u)); display: flex; flex-direction: column; align-items: center; gap: calc(56 * var(--u)); }
+.cmp__head { display: flex; flex-direction: column; align-items: center; gap: calc(18 * var(--u)); text-align: center; }
+.cmp__title { font-family: var(--serif); font-size: calc(60 * var(--u)); line-height: round(1.15em, 1px); color: var(--ink); display: flex; align-items: flex-end; justify-content: center; flex-wrap: wrap; column-gap: calc(14 * var(--u)); }
+.cmp__title em { color: var(--peri); }
+.cmp__sub { font: 400 max(14.76px, calc(18 * var(--u)))/round(1.5em, 1px) var(--sans); color: var(--ink-70); }
+.cmp__scroll { inline-size: 100%; }
+.cmp__table {
+  inline-size: calc(100% + calc(24 * var(--u))); margin-inline: calc(-12 * var(--u));
+  table-layout: fixed; border-collapse: separate; border-spacing: calc(12 * var(--u)) 0;
+  font: 400 max(12.3px, calc(15 * var(--u)))/round(1.45em, 1px) var(--sans); color: var(--ink-70); text-align: start;
+}
+.cmp__table :is(th, td) { padding: 0 calc(22 * var(--u)); vertical-align: middle; text-align: start; font-weight: 400; }
+.cmp__table thead :is(th, td) { padding: 0; vertical-align: top; }
+.cmp__corner { inline-size: calc(200 * var(--u)); }
+.cmp__table thead th { position: relative; block-size: calc(152 * var(--u)); }
+.cmp__table thead th:not(.is-em) { padding-block-start: calc(32 * var(--u)); }
+.cmp__table thead th:not(.is-em)::before { content: ""; position: absolute; inset: calc(32 * var(--u)) 0 0; border: 1px solid var(--rule); border-block-end: 0; pointer-events: none; }
+.cmp__band { display: grid; place-items: center; block-size: calc(32 * var(--u)); background: var(--peri); font: 700 max(12px, calc(13 * var(--u)))/normal var(--sans); letter-spacing: calc(.2 * var(--u)); color: var(--white); }
+.cmp__hd { block-size: calc(120 * var(--u)); padding: 0 calc(22 * var(--u)); display: flex; flex-direction: column; justify-content: center; gap: calc(6 * var(--u)); }
+.cmp__name { font: 400 max(19.68px, calc(24 * var(--u)))/normal var(--serif); color: var(--ink); }
+.cmp__kind { font: 400 max(12px, calc(14 * var(--u)))/normal var(--sans); color: var(--ink-55); }
+.cmp__table thead th.is-em { background: var(--ink); }
+.cmp__table thead th.is-em .cmp__name { font-size: max(24.6px, calc(30 * var(--u))); font-style: italic; color: var(--white); }
+.cmp__table thead th.is-em .cmp__kind { color: var(--lav); }
+.cmp__table tbody :is(th, td) { block-size: calc(84 * var(--u)); border-block-start: 1px solid var(--rule); }
+.cmp__table tbody th { font: 500 max(13.94px, calc(17 * var(--u)))/round(1.45em, 1px) var(--serif); color: var(--ink); }
+.cmp__table tbody td:not(.is-em) { border-inline: 1px solid var(--rule); background: var(--white); }
+.cmp__table tbody tr:last-child td:not(.is-em) { border-block-end: 1px solid var(--rule); }
+.cmp__table .is-em { background: var(--ink); color: var(--white); }
+.cmp__table tbody td.is-em { border-block-start-color: var(--white-20); }
+.cmp__table tbody :is(th, td) { transition: background-color .2s var(--ease-css), color .2s var(--ease-css); }
+@media (hover: hover) and (pointer: fine) {
+  .cmp__table tbody tr:hover th { color: var(--peri); }
+  .cmp__table tbody tr:hover td:not(.is-em) { background: var(--cream); color: var(--ink); }
+  .cmp__table tbody tr:hover td.is-em { background: color-mix(in oklch, var(--ink), var(--peri) 28%); }
+}
+/* tap state on touch screens */
+.cmp__table tbody tr.is-tap th { color: var(--peri); }
+.cmp__table tbody tr.is-tap td:not(.is-em) { background: var(--cream); color: var(--ink); }
+.cmp__table tbody tr.is-tap td.is-em { background: color-mix(in oklch, var(--ink), var(--peri) 28%); }
+.cmp__note { font: 400 max(12px, calc(13 * var(--u)))/round(1.5em, 1px) var(--sans); color: var(--ink-55); text-align: center; }
+.cmp > .cta { align-self: center; }
+.cmp__hint { display: none; font: 700 max(12px, calc(13 * var(--u)))/normal var(--sans); color: var(--peri); }
+
+/* -------------------------------------------------- reviews */
+.rv { background: var(--cream); padding: calc(112 * var(--u)) var(--pad) calc(120 * var(--u)); display: flex; flex-direction: column; gap: calc(48 * var(--u)); }
+.rv__head { box-shadow: inset 0 1px 0 var(--rule); padding-block-start: calc(24 * var(--u)); display: flex; align-items: flex-end; justify-content: space-between; gap: calc(40 * var(--u)); }
+.rv__title-wrap { display: flex; flex-direction: column; gap: calc(16 * var(--u)); }
+.rv__title { font-family: var(--serif); font-size: calc(56 * var(--u)); color: var(--ink); display: flex; flex-direction: column; }
+.rv__title > span { line-height: round(1.1em, 1px); }
+.rv__title em { line-height: round(1.15em, 1px); color: var(--peri); }
+.rv__score { inline-size: calc(360 * var(--u)); display: flex; flex-direction: column; align-items: flex-start; gap: calc(10 * var(--u)); }
+.rv__rating { display: flex; align-items: center; gap: calc(14 * var(--u)); }
+.rv__num { font: 400 max(32.8px, calc(40 * var(--u)))/1 var(--serif); color: var(--ink); }
+.rv__row { display: grid; grid-template-columns: repeat(3, 1fr); gap: calc(40 * var(--u)); }
+.review { box-shadow: inset 0 1px 0 var(--rule); padding-block-start: calc(28 * var(--u)); display: flex; flex-direction: column; gap: calc(24 * var(--u)); }
+.review { position: relative; isolation: isolate; }
+.review::after { content: ""; position: absolute; inset: 0 calc(-24 * var(--u)) calc(-24 * var(--u)); z-index: -1; background: var(--white); box-shadow: 0 22px 50px oklch(from var(--ink) l c h / .12), 0 2px 8px oklch(from var(--ink) l c h / .06); opacity: 0; pointer-events: none; transition: opacity .35s var(--ease-css); }
+.review::before { z-index: 1; inset-inline: calc(-24 * var(--u)); block-size: calc(2 * var(--u)); }
+.review::before { background: var(--peri); }
+.review__ini { transition: background-color .25s var(--ease-css), color .25s var(--ease-css); }
+.review__quote { transition: color .2s var(--ease-css); }
+@media (prefers-reduced-motion: no-preference) {
+  .review { transition: translate .45s var(--ease-out); }
+  .review::after { transition: opacity .35s var(--ease-css), scale .45s var(--ease-out); scale: .97; }
+  .review .stars { transition: translate .4s var(--ease-out); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .review:hover { translate: 0 calc(-8 * var(--u)); }
+  .review:hover::after { opacity: 1; scale: 1; }
+  .review:hover::before { transform: scaleX(1); }
+  .review:hover .review__ini { background: var(--peri); color: var(--white); }
+  .review:hover .review__quote { color: var(--peri-deep); }
+  .review:hover .stars { translate: calc(4 * var(--u)) 0; }
+}
+/* tap state on touch screens */
+.review.is-tap { translate: 0 calc(-8 * var(--u)); }
+.review.is-tap::after { opacity: 1; scale: 1; }
+.review.is-tap::before { transform: scaleX(1); }
+.review.is-tap .review__ini { background: var(--peri); color: var(--white); }
+.review.is-tap .review__quote { color: var(--peri-deep); }
+.review.is-tap .stars { translate: calc(4 * var(--u)) 0; }
+.review__quote { flex: 1; font: 400 max(19.68px, calc(24 * var(--u)))/round(1.45em, 1px) var(--serif); color: var(--ink); }
+.review__who { display: flex; align-items: center; gap: calc(16 * var(--u)); }
+.review__ini { flex: none; inline-size: calc(56 * var(--u)); block-size: calc(56 * var(--u)); display: grid; place-items: center; background: var(--mist); font: 500 max(18.04px, calc(22 * var(--u)))/normal var(--serif); color: var(--ink); }
+.review__name { display: flex; flex-direction: column; gap: calc(2 * var(--u)); font: 500 max(14.76px, calc(18 * var(--u)))/normal var(--serif); color: var(--ink); }
+.review__meta { font: 400 max(12px, calc(14 * var(--u)))/normal var(--sans); color: var(--ink-55); }
+
+/* -------------------------------------------------- team */
+.team { background: var(--indigo); padding: calc(112 * var(--u)) var(--pad) calc(120 * var(--u)); display: flex; flex-direction: column; gap: calc(64 * var(--u)); color: var(--white); }
+.team__head { display: flex; align-items: flex-end; justify-content: space-between; gap: calc(40 * var(--u)); }
+.team__hl { display: flex; flex-direction: column; gap: calc(20 * var(--u)); }
+.team__title { font-family: var(--serif); font-size: calc(56 * var(--u)); line-height: round(1.1em, 1px); color: var(--white); display: flex; flex-direction: column; gap: calc(20 * var(--u)); }
+.team__title em { color: var(--lav); }
+.team__intro { inline-size: calc(460 * var(--u)); flex: none; font: 400 max(13.94px, calc(17 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--white-80); }
+.team__gallery { display: flex; gap: calc(24 * var(--u)); }
+.interior { position: relative; flex: 1; block-size: calc(620 * var(--u)); overflow: clip; }
+.interior img { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; object-fit: cover; }
+.interior__scrim { position: absolute; inset-inline-start: 0; inset-block-start: calc(380 * var(--u)); inline-size: max(100%, calc(700 * var(--u))); block-size: calc(240 * var(--u)); background: linear-gradient(180deg, oklch(from var(--navy) l c h / 0), oklch(from var(--navy) l c h / .85)); }
+.interior__cap { position: absolute; inset-inline-start: calc(32 * var(--u)); inset-block-start: calc(540 * var(--u)); display: flex; flex-direction: column; gap: calc(4 * var(--u)); }
+.interior__t { font: 500 max(19.68px, calc(24 * var(--u)))/normal var(--serif); }
+.interior__b { font: 400 max(12.3px, calc(15 * var(--u)))/normal var(--sans); color: var(--white-80); }
+.member { inline-size: calc(300 * var(--u)); flex: none; display: flex; flex-direction: column; gap: calc(20 * var(--u)); }
+.member__img { overflow: clip; }
+.member__img img { inline-size: 100%; block-size: calc(420 * var(--u)); object-fit: cover; object-position: 50% 20%; }
+.member__text { box-shadow: inset 0 1px 0 var(--white-20); padding-block-start: calc(18 * var(--u)); display: flex; flex-direction: column; gap: calc(8 * var(--u)); }
+.member__name { font: 500 max(19.68px, calc(24 * var(--u)))/round(1.25em, 1px) var(--serif); }
+.member__role { font: 700 max(12px, calc(13 * var(--u)))/normal var(--sans); letter-spacing: calc(.2 * var(--u)); color: var(--lav); }
+.member__bio { font: 400 max(12.3px, calc(15 * var(--u)))/round(1.55em, 1px) var(--sans); color: var(--white-80); }
+.values { display: flex; gap: calc(40 * var(--u)); }
+.value { flex: 1; box-shadow: inset 0 1px 0 var(--white-20); padding-block-start: calc(20 * var(--u)); display: flex; flex-direction: column; gap: calc(10 * var(--u)); }
+.value h3 { font: 400 max(19.68px, calc(24 * var(--u)))/normal var(--serif); transition: color .2s var(--ease-css); }
+.value { position: relative; }
+.value::before { content: ""; position: absolute; inset-inline: 0; inset-block-start: 0; block-size: 1px; background: var(--lav); transform: scaleX(0); transform-origin: left center; }
+.value__ico { inline-size: calc(44 * var(--u)); block-size: calc(44 * var(--u)); margin-block: calc(4 * var(--u)) calc(6 * var(--u)); overflow: visible; color: var(--lav); }
+.value__ico path { fill: none; stroke: currentColor; stroke-width: calc(1.5 * var(--u)); stroke-linecap: round; stroke-linejoin: round; transition: stroke .2s var(--ease-css); }
+@media (prefers-reduced-motion: no-preference) {
+  .value::before { transition: transform .5s var(--ease-out); }
+  .value__ico { transition: translate .4s var(--ease-out), scale .4s var(--ease-out); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .value:hover::before { transform: scaleX(1); }
+  .value:hover h3 { color: var(--lav); }
+  .value:hover .value__ico { translate: 0 calc(-4 * var(--u)); scale: 1.06; }
+  .value:hover .value__ico path { stroke: var(--white); }
+}
+/* tap state on touch screens */
+.value.is-tap::before { transform: scaleX(1); }
+.value.is-tap h3 { color: var(--lav); }
+.value.is-tap .value__ico { translate: 0 calc(-4 * var(--u)); scale: 1.06; }
+.value.is-tap .value__ico path { stroke: var(--white); }
+.value p { font: 400 max(13.12px, calc(16 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--white-80); }
+
+/* -------------------------------------------------- contact */
+.contact { background: var(--cream); padding: calc(112 * var(--u)) var(--pad) calc(120 * var(--u)); display: flex; gap: calc(80 * var(--u)); align-items: flex-start; }
+.contact__info { flex: 1; box-shadow: inset 0 1px 0 var(--rule); padding-block-start: calc(24 * var(--u)); display: flex; flex-direction: column; gap: calc(28 * var(--u)); }
+.contact__title { font-family: var(--serif); font-size: calc(56 * var(--u)); color: var(--ink); display: flex; flex-direction: column; }
+.contact__title > span { line-height: round(1.1em, 1px); }
+.contact__title em { line-height: round(1.15em, 1px); color: var(--peri); }
+.contact__body { font: 400 max(13.12px, calc(16 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--ink-70); }
+.details { display: flex; flex-direction: column; }
+.detail { display: flex; align-items: center; gap: calc(16 * var(--u)); padding: calc(16 * var(--u)) 0; box-shadow: inset 0 1px 0 var(--rule); }
+.detail dt { flex: none; display: flex; align-items: center; gap: calc(16 * var(--u)); inline-size: calc(calc(24 * var(--u)) + calc(16 * var(--u)) + calc(60 * var(--u))); font: 700 max(12px, calc(13 * var(--u)))/normal var(--sans); letter-spacing: calc(.2 * var(--u)); color: var(--peri); }
+.detail__ico { inline-size: calc(24 * var(--u)); display: flex; justify-content: center; flex: none; }
+.ico { overflow: visible; }
+.ico path { fill: none; stroke: var(--peri); stroke-width: calc(1.5 * var(--u)); stroke-linecap: round; stroke-linejoin: round; }
+.ico--pin { inline-size: calc(14 * var(--u)); block-size: calc(20 * var(--u)); }
+.ico--phone { inline-size: calc(14 * var(--u)); block-size: calc(18 * var(--u)); }
+.ico--clock { inline-size: calc(18 * var(--u)); block-size: calc(18 * var(--u)); }
+.detail dd { font: 400 max(13.12px, calc(16 * var(--u)))/normal var(--sans); color: var(--ink); }
+.detail dd a { transition: color .15s var(--ease-css); }
+@media (hover: hover) and (pointer: fine) { .detail dd a:hover { color: var(--peri); } }
+/* tap state on touch screens */
+.detail dd a.is-tap { color: var(--peri); }
+.map { position: relative; block-size: calc(340 * var(--u)); border-radius: calc(6 * var(--u)); overflow: clip; background: var(--mist); isolation: isolate; }
+.map__frame { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; border: 0; filter: grayscale(.9) contrast(1.02); }
+.map__tint { position: absolute; inset: 0; background: color-mix(in oklch, var(--peri) 22%, transparent); mix-blend-mode: multiply; pointer-events: none; }
+.map__card { position: absolute; inset-inline-start: calc(20 * var(--u)); inset-block-start: calc(176 * var(--u)); inline-size: calc(340 * var(--u)); background: var(--white); padding: calc(18 * var(--u)) calc(20 * var(--u)); display: flex; flex-direction: column; gap: calc(6 * var(--u)); }
+.map__clinic { font: 500 max(15.58px, calc(19 * var(--u)))/normal var(--serif); color: var(--ink); }
+.map__addr { font: 400 max(12px, calc(14 * var(--u)))/round(1.5em, 1px) var(--sans); color: var(--ink-70); }
+.map__rating { display: flex; align-items: center; gap: calc(8 * var(--u)); font: 700 max(12px, calc(13 * var(--u)))/normal var(--sans); color: var(--ink); }
+.stars--xs svg { inline-size: calc(12 * var(--u)); block-size: calc(12 * var(--u)); }
+.stars--xs { gap: calc(2 * var(--u)); }
+.map__dir { padding-block-start: calc(6 * var(--u)); }
+
+.form { inline-size: calc(600 * var(--u)); flex: none; background: var(--ink); padding: calc(48 * var(--u)); display: flex; flex-direction: column; gap: calc(22 * var(--u)); color: var(--white); }
+.form__tag { align-self: flex-start; padding: calc(8 * var(--u)) calc(14 * var(--u)); background: var(--peri); font: 700 max(12px, calc(13 * var(--u)))/normal var(--sans); }
+.form__title { font: 400 max(27.88px, calc(34 * var(--u)))/normal var(--serif); }
+.form__sub { font: 400 max(12.3px, calc(15 * var(--u)))/round(1.5em, 1px) var(--sans); color: var(--white-80); }
+.form__row { display: flex; gap: calc(16 * var(--u)); }
+.form__row .field { flex: 1; }
+.field { display: flex; flex-direction: column; gap: calc(8 * var(--u)); }
+.field > span { font: 700 max(12px, calc(14 * var(--u)))/normal var(--sans); }
+.field input, .field textarea {
+  inline-size: 100%; border: 0; border-radius: 0; background: var(--white); color: var(--ink);
+  font: 400 max(16px, max(13.12px, calc(16 * var(--u))))/normal var(--sans); padding: 0 calc(16 * var(--u)); block-size: calc(52 * var(--u));
+  outline: 2px solid transparent; outline-offset: 0;
+  transition: outline-color .15s var(--ease-css), box-shadow .15s var(--ease-css);
+}
+.field textarea { block-size: auto; field-sizing: content; min-block-size: calc(136 * var(--u)); max-block-size: calc(320 * var(--u)); padding: calc(16 * var(--u)); line-height: round(1.5em, 1px); resize: vertical; }
+.field :is(input, textarea)::placeholder { color: var(--ink-55); opacity: 1; }
+.field :is(input, textarea):focus-visible { outline-color: var(--lav); outline-offset: 2px; }
+.field :is(input, textarea):user-invalid { box-shadow: inset 0 0 0 2px var(--lav); }
+.consent { display: flex; gap: calc(12 * var(--u)); cursor: pointer; position: relative; }
+.consent input { position: absolute; opacity: 0; inline-size: calc(20 * var(--u)); block-size: calc(20 * var(--u)); margin: 0; }
+.consent__box { flex: none; inline-size: calc(20 * var(--u)); block-size: calc(20 * var(--u)); border: 1px solid var(--white); display: grid; place-items: center; transition: background-color .15s var(--ease-css); }
+.consent__box svg { inline-size: calc(12 * var(--u)); block-size: calc(9 * var(--u)); opacity: 0; }
+.consent input:checked + .consent__box { background: var(--peri); }
+.consent input:checked + .consent__box svg { opacity: 1; }
+.consent input:focus-visible + .consent__box { outline: 2px solid var(--lav); outline-offset: 2px; }
+.consent__text { font: 400 max(12px, calc(13 * var(--u)))/round(1.5em, 1px) var(--sans); color: var(--white-70); }
+.form__error { font: 700 max(12px, calc(14 * var(--u)))/round(1.4em, 1px) var(--sans); color: var(--lav); }
+.form__error:empty { display: none; }
+.form__submit { block-size: calc(64 * var(--u)); inline-size: 100%; background: var(--peri); color: var(--white); font: 400 max(14.76px, calc(18 * var(--u)))/normal var(--sans); letter-spacing: calc(.7 * var(--u)); transition: background-color .2s var(--ease-css), opacity .15s var(--ease-css), scale .12s var(--ease-out); }
+.form__submit:focus-visible { outline-color: var(--lav); }
+.form__submit[disabled] { opacity: .6; cursor: default; }
+@media (hover: hover) and (pointer: fine) { .form__submit:not([disabled]):hover { background: var(--peri-deep); } }
+/* tap state on touch screens */
+.form__submit:not([disabled]).is-tap { background: var(--peri-deep); }
+.form__terms { font: 400 max(12px, calc(12 * var(--u)))/round(1.5em, 1px) var(--sans); color: var(--white-60); }
+.form__done { display: flex; flex-direction: column; gap: calc(16 * var(--u)); }
+.form__done p { font: 400 max(13.12px, calc(16 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--white-80); }
+
+/* -------------------------------------------------- faq */
+.faq { background: var(--white); padding: calc(112 * var(--u)) var(--pad) calc(120 * var(--u)); display: flex; gap: calc(80 * var(--u)); align-items: flex-start; }
+.faq__intro { inline-size: calc(400 * var(--u)); flex: none; box-shadow: inset 0 1px 0 var(--rule); padding-block-start: calc(24 * var(--u)); display: flex; flex-direction: column; gap: calc(24 * var(--u)); }
+.faq__title { font-family: var(--serif); font-size: calc(56 * var(--u)); color: var(--ink); display: flex; flex-direction: column; }
+.faq__title > span { line-height: round(1.1em, 1px); }
+.faq__title em { line-height: round(1.15em, 1px); color: var(--peri); }
+.faq__body { font: 400 max(13.12px, calc(16 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--ink-70); }
+.faq__body a { color: var(--ink); text-decoration: underline; text-underline-offset: .15em; text-decoration-thickness: 1px; }
+.faq__list { flex: 1; box-shadow: inset 0 1px 0 var(--rule); }
+.qa { box-shadow: inset 0 -1px 0 var(--rule); padding: calc(28 * var(--u)) 0; }
+.qa summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: calc(24 * var(--u)); font: 400 max(19.68px, calc(24 * var(--u)))/normal var(--serif); color: var(--ink); transition: color .2s var(--ease-css); }
+.qa summary::-webkit-details-marker { display: none; }
+.qa summary .plus { flex: none; inline-size: calc(20 * var(--u)); block-size: calc(20 * var(--u)); }
+.qa summary .plus path { stroke: var(--peri); }
+.qa .plus .plus__v { transform-box: fill-box; transform-origin: center; transition: scale .25s var(--ease-css); }
+.qa[open] .plus .plus__v { scale: 1 0; }
+@media (hover: hover) and (pointer: fine) { .qa summary:hover { color: var(--peri); } }
+/* tap state on touch screens */
+.qa summary.is-tap { color: var(--peri); }
+.qa__a { overflow: clip; }
+.qa__a p { padding-block-start: calc(12 * var(--u)); max-inline-size: calc(640 * var(--u)); font: 400 max(13.12px, calc(16 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--ink-70); }
+
+/* -------------------------------------------------- final cta */
+.final { background: var(--navy); block-size: calc(680 * var(--u)); overflow: clip; color: var(--white); }
+.final__photo { position: absolute; inset-block-start: 0; inset-inline-start: calc(var(--edge) + calc(470 * var(--u))); inline-size: calc(1440 * var(--u)); block-size: calc(702 * var(--u)); max-inline-size: none; object-fit: cover; }
+.final__stage { position: relative; inline-size: calc(1440 * var(--u)); block-size: 100%; margin-inline: auto; }
+.final__scrim { position: absolute; inset-block-start: 0; inset-inline-start: 0; inline-size: calc(860 * var(--u)); block-size: calc(680 * var(--u)); background: linear-gradient(90deg, var(--navy) 0%, var(--navy) 60%, oklch(from var(--navy) l c h / 0) 100%); }
+.final__copy { position: absolute; inset-inline-start: calc(80 * var(--u)); inset-block-start: calc(120 * var(--u)); inline-size: calc(640 * var(--u)); display: flex; flex-direction: column; }
+.final__copy .eyebrow { margin-block-end: calc(20 * var(--u)); }
+.final__title { font-family: var(--serif); font-size: calc(60 * var(--u)); display: flex; flex-direction: column; }
+.final__l1 { line-height: round(1.1em, 1px); }
+.final__l2 { line-height: round(1.15em, 1px); color: var(--lav); }
+.final__body { margin-block-start: calc(24 * var(--u)); inline-size: calc(520 * var(--u)); font: 400 max(14.76px, calc(18 * var(--u)))/round(1.6em, 1px) var(--sans); color: var(--white-80); }
+.final .cta-row { margin-block-start: calc(36 * var(--u)); }
+
+/* -------------------------------------------------- footer */
+.foot { position: relative; z-index: 1; background: linear-gradient(180deg, var(--indigo), var(--navy)); padding: calc(80 * var(--u)) var(--pad); color: var(--white); }
+.foot__cols { display: flex; gap: calc(80 * var(--u)); }
+.foot__brand, .foot__col { flex: 1; display: flex; flex-direction: column; }
+.foot__brand { gap: calc(20 * var(--u)); }
+.foot__logo { align-self: flex-start; border-radius: 4px; }
+.foot__logo img { filter: drop-shadow(0 0 6px oklch(from var(--white) l c h / 0)) drop-shadow(0 0 18px oklch(from var(--white) l c h / 0)); transition: filter .4s var(--ease-css); will-change: filter; }
+@media (hover: hover) and (pointer: fine) {
+  .foot__logo:hover img { filter: drop-shadow(0 0 6px oklch(from var(--white) l c h / .85)) drop-shadow(0 0 18px oklch(from var(--white) l c h / .5)); }
+}
+/* tap state on touch screens */
+.foot__logo.is-tap img { filter: drop-shadow(0 0 6px oklch(from var(--white) l c h / .85)) drop-shadow(0 0 18px oklch(from var(--white) l c h / .5)); }
+.foot__logo:focus-visible img { filter: drop-shadow(0 0 6px oklch(from var(--white) l c h / .85)) drop-shadow(0 0 18px oklch(from var(--white) l c h / .5)); }
+.foot__brand img { inline-size: calc(240 * var(--u)); block-size: calc(68 * var(--u)); object-fit: contain; object-position: left center; }
+.foot__brand p { inline-size: calc(300 * var(--u)); font: 500 max(14.76px, calc(18 * var(--u)))/round(1.3em, 1px) var(--serif); }
+.foot__col { gap: calc(14 * var(--u)); }
+.foot__col ul { margin-block-start: calc(18 * var(--u)); }
+.foot__col h2 { font: 400 max(14.76px, calc(18 * var(--u)))/normal var(--serif); letter-spacing: calc(.36 * var(--u)); }
+.foot__col ul { display: flex; flex-direction: column; gap: calc(14 * var(--u)); }
+.foot__col li { font: 400 max(12px, calc(14 * var(--u)))/round(1.5em, 1px) var(--sans); letter-spacing: calc(.28 * var(--u)); color: var(--white-80); }
+.foot__col a { transition: color .15s var(--ease-css); }
+@media (hover: hover) and (pointer: fine) { .foot__col a:hover { color: var(--lav); } }
+/* tap state on touch screens */
+.foot__col a.is-tap { color: var(--lav); }
+
+/* ====================================================================
+   Below 64rem (and on portrait tablets up to 75rem) the desktop artboard
+   would get too small to read, so the page switches to a stacked layout
+   sized with rem, clamp() and viewport units.
+   ==================================================================== */
+@media (width < 64rem), (orientation: portrait) and (width < 75rem) {
+  :root {
+    --u: clamp(0.62px, calc(var(--vw) / 640), 1px);
+    --g: clamp(1.25rem, 0.75rem + 2vw, 2.5rem);
+    --pad: var(--g);
+    --sec: clamp(3.5rem, 10svh, 6.5rem);
+    --t-h1: clamp(2.6rem, 1.9rem + 3vw, 4rem);
+    --t-h2: clamp(2.2rem, 1.7rem + 2.2vw, 3.25rem);
+    --t-h3: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+    --t-card: clamp(1.25rem, 1.1rem + .5vw, 1.5rem);
+    --t-body: 1rem;
+    --t-lead: 1.0625rem;
+    --t-small: .875rem;
+    --t-micro: .8125rem;
+  }
+  section[id] { scroll-margin-block-start: 56px; }
+
+  .eyebrow { font-size: var(--t-micro); letter-spacing: .2px; }
+  .cta { gap: 12px; }
+  .cta__label { font-size: var(--t-lead); letter-spacing: .5px; }
+  .disc { inline-size: 52px; block-size: 52px; }
+  .glyph svg { inline-size: 26px; block-size: 3.5px; }
+  .glyph path, .more path, .ico path, .plus path { stroke-width: 1.5px; }
+  .cta-row { flex-wrap: wrap; gap: 16px 28px; }
+  .call { font-size: var(--t-body); }
+  .more { font-size: .9375rem; gap: 12px; letter-spacing: .4px; }
+  .more svg { inline-size: 26px; block-size: 3px; }
+  .stars { gap: 4px; }
+  .stars svg { inline-size: 16px; block-size: 16px; }
+
+  .bar__in { block-size: 56px; }
+  .bar__logo img { block-size: 36px; }
+  .bar__nav { display: none; }
+  .cta--bar { gap: 10px; }
+  .cta--bar .disc { inline-size: 38px; block-size: 38px; }
+  .cta--bar .glyph svg { inline-size: 18px; block-size: 3px; }
+  .cta--bar .cta__label { font-size: .9375rem; letter-spacing: .4px; }
+
+  .hero { position: relative; inset-block-start: auto; block-size: 100svh; min-block-size: 0; display: flex; flex-direction: column; }
+  .hero__copy > * { --u: inherit; }
+  .hero__media { position: relative; inset: auto; flex: 1 1 0; min-block-size: 0; --fx: .8; --fy: .3; }
+  .hero__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, oklch(from var(--indigo) l c h / 0) 60%, var(--indigo) 100%); pointer-events: none; }
+  .face--spots { z-index: 1; }
+  .hero__stage { position: static; inline-size: auto; block-size: auto; margin: 0; }
+  .hero__scrim { display: none; }
+  .hero__stage { flex: none; }
+  .hero__copy { position: relative; inset: auto; inline-size: auto; margin-block-start: -5svh; padding: 0 var(--g) min(clamp(2.5rem, 2rem + 3vw, 4rem), 6svh); justify-content: flex-start; }
+  .hero__copy .eyebrow { margin-block-end: min(14px, 1.8svh); font-size: min(var(--t-micro), 2svh); }
+  .hero__title { font-size: min(var(--t-h1), 6.2svh); }
+  .hero__sub { inline-size: auto; max-inline-size: 40rem; margin-block-start: min(16px, 2.2svh); font-size: min(1rem, 2.35svh); }
+  .pill { margin-block-start: min(22px, 2.8svh); flex-wrap: wrap; gap: 2px 10px; padding: min(10px, 1.3svh) 18px; border-radius: 24px; }
+  .pill strong { font-size: min(1.0625rem, 2.5svh); }
+  .pill span { font-size: min(.875rem, 2.1svh); }
+  .hero .cta-row { margin-block-start: min(22px, 2.8svh); gap: min(16px, 2svh) 28px; }
+  .hero .cta-row .disc { inline-size: min(52px, 7svh); block-size: min(52px, 7svh); }
+  .hero .cta__label { font-size: min(var(--t-lead), 2.5svh); }
+  .hero .call { font-size: min(var(--t-body), 2.35svh); }
+  /* labels sit to the left of each line, right aligned, so they grow away from the face */
+  .spot__label { inset: auto; inset-inline-end: calc(100% - 150 * var(--p)); inset-block-start: calc(26 * var(--p)); translate: 0 -50%; inline-size: max-content; align-items: flex-end; text-align: end; gap: 1px; }
+  .spot__zone { font-size: clamp(.9375rem, .8rem + .55vw, 1.3rem); }
+  .spot__act { font-size: clamp(.6875rem, .62rem + .3vw, .875rem); }
+  .spot__line { inset-block-start: calc(26 * var(--p)); block-size: 1px; }
+  .spot__mk { inset-inline-start: calc((var(--mkx) + 9) * var(--p) - 7px); inset-block-start: calc(26 * var(--p) - 7px); inline-size: 14px; block-size: 14px; }
+  .spot__mk::after { content: ""; position: absolute; inset: -14px; }
+  .spot__mk::before { inset: -8px; background: oklch(from var(--white) l c h / .16); box-shadow: inset 0 0 0 1px var(--white-70); }
+  .zone-card { inset: auto; inline-size: min(340px, calc(100vw - 24px)); max-block-size: 70svh; padding: 20px 20px 18px; border-radius: 14px; background: linear-gradient(160deg, oklch(from var(--white) l c h / .16), oklch(from var(--white) l c h / .04)), oklch(from var(--navy) l c h / .72); -webkit-backdrop-filter: blur(28px) saturate(1.5); backdrop-filter: blur(28px) saturate(1.5); }
+  .zone-card:popover-open { gap: 12px; }
+  .zone-card__close, .zone-card__close .plus { inline-size: 18px; block-size: 18px; }
+  .zone-card__title { font-size: 1.75rem; }
+  .zone-card__body { font-size: .9375rem; }
+  .zone-card__facts > div { padding: 8px 0; gap: 2px; }
+  .zone-card__facts dt { font-size: .8125rem; }
+  .zone-card__facts dd { font-size: .9375rem; }
+
+  .stats { padding: var(--sec) var(--g); }
+  .stats__grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: 40px 24px; }
+  .stat { padding-block-start: 20px; gap: 10px; }
+  .stat__fig { gap: 8px; }
+  .stat__num { font-size: clamp(4rem, 3rem + 5vw, 6rem); }
+  .stat__unit { font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2rem); padding-block-end: 10px; }
+  .stat__label { font-size: 1.125rem; }
+  .stat__body { font-size: .9375rem; }
+
+  .quiz { flex-direction: column; align-items: stretch; gap: 40px; padding: var(--sec) var(--g); }
+  .quiz__intro { inline-size: auto; gap: 16px; }
+  .quiz__title { font-size: var(--t-h2); }
+  .quiz__t2 { gap: 10px; padding-block-end: 4px; }
+  .quiz__body { font-size: var(--t-body); }
+  .console { padding: clamp(1.25rem, .75rem + 2vw, 2.5rem); gap: 24px; }
+  .console__step { font-size: var(--t-micro); }
+  .console__back { font-size: var(--t-small); padding: 10px 0 10px 16px; margin: -10px 0; }
+  .console__progress { gap: 6px; }
+  .console__progress span { block-size: 4px; }
+  .console__q { gap: 20px; }
+  .console__question { font-size: var(--t-h3); }
+  .console__options { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 12px; }
+  .console__summary { font-size: var(--t-body); }
+  .qopt { min-block-size: 64px; padding: 12px 18px; gap: 14px; }
+  .qopt__label { font-size: var(--t-body); }
+  .qopt__box { inline-size: 22px; block-size: 22px; }
+  .qopt__box svg { inline-size: 12px; block-size: 9px; }
+  .check path { stroke-width: 2px; }
+  .console__result { flex-direction: column; align-items: flex-start; padding-block-start: 20px; gap: 20px; }
+  .console__rtext { gap: 4px; }
+  .console__r1 { font-size: var(--t-micro); }
+  .console__r2 { font-size: 1.25rem; }
+  .cta--btn { align-self: flex-start; }
+
+  .ba { padding: var(--sec) var(--g); gap: 32px; }
+  .ba__head { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .ba__title { font-size: var(--t-h2); }
+  .ba__l2 { gap: 10px; }
+  .ba__note { font-size: var(--t-small); }
+  .ba__tiles { gap: 24px; }
+  .ba__ctas { justify-content: flex-start; gap: 20px 32px; padding-block-start: 0; }
+  .ba__ctas .cta { align-self: flex-start; }
+  .ba-tile:nth-child(n) .ba-tile__img img { block-size: auto; }
+  .ba-tile__tags span { padding: 12px 16px; font-size: 1.0625rem; }
+  .ba-tile__cap { padding: 14px 16px 18px; }
+  .ba-tile__area { font-size: var(--t-micro); }
+  .ba-tile__text { font-size: var(--t-body); }
+
+  .what { flex-direction: column; align-items: stretch; gap: 48px; padding: var(--sec) var(--g); }
+  .what__media { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 28px 16px; align-items: end; }
+  .vcard--a { inline-size: auto; block-size: auto; aspect-ratio: 4 / 5; max-block-size: 80svh; }
+  .icard { inline-size: auto; }
+  .icard__img img { block-size: auto; aspect-ratio: 16 / 10; }
+  .icard__cap { padding-block-start: 12px; gap: 4px; }
+  .icard__title { font-size: var(--t-card); }
+  .icard__body { font-size: .9375rem; }
+  .what__copy { gap: 22px; }
+  .what__title { font-size: var(--t-h2); gap: 12px; }
+  .what__intro { font-size: var(--t-body); }
+  .mechs { flex-wrap: wrap; gap: 24px; }
+  .mech { flex: 1 1 14rem; padding-block-start: 16px; gap: 8px; }
+  .mech h3 { font-size: var(--t-card); }
+  .mech p { font-size: .9375rem; }
+  .chips, .chips ul { gap: 8px; }
+  .chips li { block-size: 36px; padding: 0 16px; border-radius: 18px; font-size: .875rem; }
+  .what__cta { padding-block-start: 4px; }
+
+  .vcard__tag { inset-inline-start: 12px; inset-block-start: 12px; padding: 5px 10px; font-size: .75rem; }
+  .vcard__play, .vcard--b .vcard__play { inset: 0; margin: auto; inline-size: 56px; block-size: 56px; padding-inline-start: 3px; }
+  .vcard__play svg { inline-size: 14px; block-size: 16px; }
+  .vcard__scrim, .vcard--b .vcard__scrim { block-size: 50%; }
+  .vcard__cap, .vcard--b .vcard__cap { inset-block: auto 14px; inset-inline: 14px; inline-size: auto; gap: 4px; }
+  .vcard__title { font-size: 1.0625rem; }
+  .vcard__body { font-size: .8125rem; }
+
+  .exp { flex-direction: column; align-items: stretch; gap: 40px; padding: var(--sec) var(--g); }
+  .exp__left { inline-size: auto; gap: 32px; }
+  .exp__head { gap: 14px; }
+  .exp__title { font-size: var(--t-h2); column-gap: 10px; padding-block-end: 4px; }
+  .exp__sub { inline-size: auto; font-size: var(--t-lead); }
+  .step { flex-direction: column; gap: 8px; padding: 20px 0; }
+  .step__name { inline-size: auto; flex-direction: row; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .step__name h3 { font-size: var(--t-card); }
+  .step__name p { font-size: var(--t-micro); letter-spacing: .2px; }
+  .step__body { font-size: .9375rem; }
+  .exp__note { font-size: var(--t-small); }
+  .vcard--b { inline-size: 100%; block-size: auto; aspect-ratio: 4 / 5; max-block-size: 80svh; }
+
+  .cmp { padding: var(--sec) var(--g); gap: 36px; align-items: stretch; }
+  .cmp__head { gap: 12px; }
+  .cmp__title { font-size: var(--t-h2); column-gap: 10px; }
+  .cmp__sub { font-size: var(--t-body); }
+  .cmp__scroll { --u: .9px; overflow-x: auto; overscroll-behavior-x: contain; margin-inline: calc(-1 * var(--g)); padding-inline: var(--g); inline-size: auto; scrollbar-width: thin; }
+  .cmp__table { inline-size: calc(calc(1280 * var(--u)) + calc(24 * var(--u))); min-inline-size: calc(calc(1280 * var(--u)) + calc(24 * var(--u))); }
+  .cmp__table tbody th, .cmp__corner { position: sticky; inset-inline-start: 0; z-index: 1; background: var(--white); box-shadow: calc(-1 * var(--g) - 2px) 0 0 var(--white), calc(14 * var(--u)) 0 0 var(--white); }
+  .cmp > .cta { align-self: flex-start; }
+  .cmp__note { text-align: start; font-size: var(--t-micro); }
+  .cmp__hint { display: block; }
+  .cmp__table tbody th::after, .cmp__corner::after { content: ""; position: absolute; inset-block: 0; inset-inline-start: calc(100% + calc(14 * var(--u))); inline-size: 28px; background: linear-gradient(90deg, var(--white), oklch(from var(--white) l c h / 0)); pointer-events: none; opacity: 0; transition: opacity .2s var(--ease-css); }
+  .cmp__scroll.is-scrolled :is(tbody th, .cmp__corner)::after { opacity: 1; }
+
+  .rv { padding: var(--sec) var(--g); gap: 32px; }
+  .rv__head { flex-direction: column; align-items: flex-start; gap: 24px; padding-block-start: 20px; }
+  .rv__title-wrap { gap: 12px; }
+  .rv__title { font-size: var(--t-h2); }
+  .rv__score { inline-size: auto; }
+  .rv__num { font-size: 2rem; }
+  .rv__rating { gap: 12px; }
+  .rv__row { grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 32px; }
+  .review { padding-block-start: 20px; gap: 18px; }
+  .review__quote { font-size: 1.25rem; }
+  .review__who { gap: 14px; }
+  .review__ini { inline-size: 48px; block-size: 48px; font-size: 1.125rem; }
+  .review__name { font-size: 1.0625rem; gap: 2px; }
+  .review__meta { font-size: var(--t-micro); }
+
+  .team { padding: var(--sec) var(--g); gap: 40px; }
+  .team__head { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .team__hl { gap: 14px; }
+  .team__title { font-size: var(--t-h2); gap: 4px; }
+  .team__intro { inline-size: auto; font-size: var(--t-body); }
+  .team__gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: 32px 16px; }
+  .interior { grid-column: 1 / -1; block-size: auto; aspect-ratio: 4 / 3.4; }
+  .interior__scrim { inset-block: auto 0; inline-size: 100%; block-size: 55%; }
+  .interior__cap { inset-inline-start: 18px; inset-block: auto 18px; gap: 2px; }
+  .interior__t { font-size: var(--t-card); }
+  .interior__b { font-size: var(--t-small); }
+  .member { inline-size: auto; gap: 16px; }
+  .member__img img { block-size: auto; aspect-ratio: 300 / 420; }
+  .member__text { padding-block-start: 14px; gap: 6px; }
+  .member__name { font-size: var(--t-card); }
+  .member__role { font-size: var(--t-micro); letter-spacing: .2px; }
+  .member__bio { font-size: .875rem; }
+  .member__name { overflow-wrap: anywhere; }
+  .values { flex-direction: column; gap: 24px; }
+  .value { padding-block-start: 16px; gap: 8px; }
+  .value h3 { font-size: var(--t-card); }
+  .value__ico { inline-size: 36px; block-size: 36px; margin-block: 2px 4px; }
+  .value__ico path { stroke-width: 1.5px; }
+  .value p { font-size: .9375rem; }
+
+  .contact { flex-direction: column; align-items: stretch; gap: 48px; padding: var(--sec) var(--g); }
+  .contact__info { gap: 22px; padding-block-start: 20px; }
+  .contact__title { font-size: var(--t-h2); }
+  .contact__body { font-size: var(--t-body); }
+  .detail { gap: 12px; padding: 14px 0; align-items: flex-start; }
+  .detail dt { inline-size: 92px; gap: 10px; font-size: var(--t-micro); letter-spacing: .2px; padding-block-start: 2px; }
+  .detail__ico { inline-size: 20px; }
+  .ico--pin { inline-size: 13px; block-size: 18px; }
+  .ico--phone { inline-size: 13px; block-size: 17px; }
+  .ico--clock { inline-size: 16px; block-size: 16px; }
+  .detail dd { font-size: .9375rem; line-height: round(1.45em, 1px); }
+  .map { block-size: clamp(300px, 70vw, 420px); border-radius: 6px; }
+  .map__card { inset-inline: 12px; inset-block: auto 12px; inline-size: auto; padding: 14px 16px; gap: 4px; }
+  .map__clinic { font-size: 1.0625rem; }
+  .map__addr { font-size: var(--t-micro); }
+  .map__rating { font-size: .75rem; gap: 6px; }
+  .stars--xs svg { inline-size: 11px; block-size: 11px; }
+  .stars--xs { gap: 2px; }
+  .form { inline-size: auto; padding: clamp(1.5rem, 1rem + 2vw, 3rem); gap: 18px; }
+  .form__tag { padding: 7px 12px; font-size: var(--t-micro); }
+  .form__title { font-size: var(--t-h3); }
+  .form__sub { font-size: .9375rem; }
+  .form__row { flex-wrap: wrap; gap: 18px 14px; }
+  .form__row .field { flex: 1 1 12rem; }
+  .field { gap: 8px; }
+  .field > span { font-size: var(--t-small); }
+  .field input { font-size: 16px; padding: 0 14px; block-size: 50px; }
+  .field textarea { font-size: 16px; padding: 14px; min-block-size: 120px; }
+  .consent { gap: 12px; }
+  .consent input, .consent__box { inline-size: 20px; block-size: 20px; }
+  .consent__box svg { inline-size: 12px; block-size: 9px; }
+  .consent__text { font-size: var(--t-micro); }
+  .form__error { font-size: var(--t-small); }
+  .form__submit { block-size: 58px; font-size: var(--t-lead); letter-spacing: .5px; }
+  .form__terms { font-size: .75rem; }
+  .form__done p { font-size: var(--t-body); }
+
+  .faq { flex-direction: column; align-items: stretch; gap: 32px; padding: var(--sec) var(--g); }
+  .faq__intro { inline-size: auto; gap: 16px; padding-block-start: 20px; }
+  .faq__title { font-size: var(--t-h2); }
+  .faq__body { font-size: var(--t-body); }
+  .qa { padding: 20px 0; }
+  .qa summary { font-size: 1.25rem; gap: 16px; }
+  .qa summary .plus { inline-size: 18px; block-size: 18px; }
+  .qa__a p { padding-block-start: 10px; max-inline-size: none; font-size: .9375rem; }
+
+  .final { block-size: auto; display: flex; flex-direction: column; }
+  .final__photo { position: relative; inset: auto; inline-size: 100%; block-size: auto; aspect-ratio: 16 / 10; object-position: 45% 50%; }
+  .final__stage { position: static; inline-size: auto; block-size: auto; margin: 0; }
+  .final__scrim { inset-inline: 0; inset-block-start: 0; inline-size: auto; block-size: calc(100vw * 10 / 16); background: linear-gradient(180deg, oklch(from var(--navy) l c h / 0) 50%, var(--navy) 100%); }
+  .final__copy { position: relative; inset: auto; inline-size: auto; padding: 8px var(--g) var(--sec); }
+  .final__copy .eyebrow { margin-block-end: 14px; }
+  .final__title { font-size: var(--t-h2); }
+  .final__body { inline-size: auto; margin-block-start: 18px; font-size: var(--t-lead); }
+  .final .cta-row { margin-block-start: 28px; }
+
+  .foot { padding: 56px var(--g) 64px; }
+  .foot__cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: 36px 24px; }
+  .foot__brand { grid-column: 1 / -1; gap: 14px; }
+  .foot__brand img { inline-size: 200px; block-size: auto; aspect-ratio: 2141 / 609; }
+  .foot__brand p { inline-size: auto; font-size: 1.0625rem; }
+  .foot__col { gap: 10px; }
+  .foot__col ul { margin-block-start: 4px; }
+  .foot__col h2 { font-size: 1.0625rem; letter-spacing: .3px; }
+  .foot__col ul { gap: 10px; }
+  .foot__col li { font-size: .875rem; letter-spacing: .2px; }
+}
+
+/* tablets in the stacked layout: keep media from towering over the page */
+@media (48rem <= width < 64rem) and (height >= 40rem), (orientation: portrait) and (48rem <= width < 75rem) {
+  /* hero: a little less face, copy centred in the space below it */
+  .hero__media { flex: 0 0 54svh; }
+  .hero__stage { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; }
+  .hero__copy { margin-block-start: -6svh; padding-block-end: 5svh; }
+
+  /* quiz answers 2 by 2 */
+  .console__options { grid-template-columns: 1fr 1fr; }
+
+  /* section CTAs centred */
+  .ba__ctas { justify-content: center; }
+  .ba__ctas .cta, .what__cta, .cmp > .cta, .team > .cta { align-self: center; }
+
+  /* Made for chips on one line */
+  .chips { flex-direction: row; }
+  .chips, .chips ul { flex-wrap: nowrap; gap: clamp(5px, .8vw, 8px); }
+  .chips li { flex: none; padding: 0 clamp(10px, 1.5vw, 16px); font-size: clamp(.75rem, .45rem + .9vw, .875rem); white-space: nowrap; }
+
+  /* team values in one row */
+  .values { flex-direction: row; gap: clamp(24px, 3vw, 40px); }
+
+  /* final banner as on desktop: copy on the left, photo on the right */
+  .final { display: block; block-size: auto; }
+  .final__photo { position: absolute; inset: 0 0 0 auto; inline-size: 54%; block-size: 100%; aspect-ratio: auto; object-fit: cover; object-position: 52% 30%; }
+  .final__stage { position: relative; min-block-size: clamp(30rem, 48svh, 40rem); display: flex; align-items: center; }
+  .final__scrim { inset: 0 auto 0 0; inline-size: 72%; block-size: auto; background: linear-gradient(90deg, var(--navy) 0%, var(--navy) 64%, oklch(from var(--navy) l c h / 0) 100%); }
+  .final__copy { inline-size: 52%; padding: var(--sec) 0 var(--sec) var(--g); }
+
+  /* footer: logo left, columns right */
+  .foot__cols { grid-template-columns: 1fr auto auto; column-gap: clamp(40px, 6vw, 80px); }
+  .foot__brand { grid-column: auto; }
+
+  .team__gallery { grid-template-columns: 2fr 1fr 1fr; }
+  .interior { grid-column: auto; aspect-ratio: auto; min-block-size: 40svh; }
+  .vcard--b { max-inline-size: 34rem; align-self: center; }
+}
+
+/* short phones (iPhone SE and similar): tighten the hero copy so the face keeps its share of the screen */
+@media (width < 64rem) and (orientation: portrait) and (height < 47.5rem) {
+  .hero__copy { margin-block-start: -3svh; }
+  .hero__title { font-size: min(var(--t-h1), 5.4svh); }
+  .hero__sub { font-size: min(1rem, 2.25svh); line-height: 1.5; }
+  .pill span { display: none; }
+  .hero__media { --fy: .08; }
+  .spot__act { display: none; }
+  .hero .cta-row .disc { inline-size: 6.5svh; block-size: 6.5svh; }
+}
+/* very narrow phones: keep the header CTA on one line */
+@media (width < 23rem) {
+  .bar__logo img { block-size: 30px; }
+  .cta--bar .cta__label { font-size: .875rem; white-space: nowrap; }
+}
+/* portrait tablets: hero laid out like desktop, copy on the left and the face on the right.
+   The hero is not locked to the screen height here: it hugs its copy so the stats bar
+   also shows on the first screen. */
+@media (orientation: portrait) and (48rem <= width < 75rem) {
+  .hero { display: block; block-size: auto; min-block-size: 0; }
+  .hero__media { position: absolute; inset: 0; min-block-size: 0; }
+  .hero__media::after { display: none; }
+  .face { inline-size: 140cqw; block-size: calc(140cqw / 1.6); inset-inline-start: calc(100cqw - 135.8cqw); inset-block-start: calc((100cqh - 140cqw / 1.6) / 2 + 28px); }
+  .face:not(.face--spots)::after { content: ""; position: absolute; inset: -1px; background: linear-gradient(180deg, var(--indigo) 0%, oklch(from var(--indigo) l c h / 0) 18%); pointer-events: none; }
+  .hero__stage { position: relative; display: flex; flex-direction: row; align-items: center; justify-content: flex-start; min-block-size: min(62svh, 46rem); padding-block: calc(56px + 4svh) 4.5svh; }
+  .hero__copy { margin: 0; inline-size: 43%; padding: 0 0 0 var(--g); justify-content: center; }
+  .hero__title { font-size: min(var(--t-h1), 5.2vw); }
+  .hero__sub { font-size: min(1rem, 2vw); margin-block-start: 2svh; }
+  .pill { margin-block-start: 2.6svh; }
+  .hero .cta-row { margin-block-start: 2.6svh; }
+  .stats { padding-block: 4svh; }
+}
+
+/* phones held sideways: the stacked hero would be taller than the screen, so copy and face sit side by side */
+@media (width < 64rem) and (orientation: landscape) {
+  .hero { flex-direction: row-reverse; }
+  .hero__media { flex: 1 1 0; --fx: .7; --fy: .25; }
+  .hero__media::after { background: linear-gradient(90deg, var(--indigo) 0%, oklch(from var(--indigo) l c h / 0) 35%); }
+  .hero__stage { flex: 0 0 58%; display: flex; flex-direction: column; justify-content: center; }
+  .hero__copy { margin: 0; padding: calc(56px + 3svh) 0 4svh var(--g); justify-content: center; }
+  .hero__stage { flex-basis: 62%; }
+  .hero__copy { padding-block-start: calc(56px + 3svh); padding-block-end: 2svh; }
+  .hero__title { font-size: min(var(--t-h1), 8.6svh); }
+  .hero__sub { font-size: min(1rem, 3.3svh); line-height: 1.5; margin-block-start: 2.5svh; }
+  .hero__copy .eyebrow { font-size: min(var(--t-micro), 3.2svh); margin-block-end: 2.5svh; }
+  .pill { margin-block-start: 3.5svh; padding: 1.5svh 16px; }
+  .pill strong { font-size: min(1.0625rem, 3.8svh); }
+  .pill span { font-size: min(.875rem, 3.3svh); }
+  .hero .cta-row { margin-block-start: 3.5svh; }
+  .hero .cta-row .disc { inline-size: min(52px, 11svh); block-size: min(52px, 11svh); }
+  .hero .cta__label { font-size: min(var(--t-lead), 3.8svh); }
+  .hero .call { font-size: min(var(--t-body), 3.6svh); }
+}
+@media (width < 64rem) and (orientation: landscape) and (height < 26rem) {
+  .pill span { display: none; }
+}
+
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-scrolling iframe { pointer-events: none; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar" data-bar>
+  <div class="bar__in">
+    <a class="bar__logo" href="#top" aria-label="Williamson Aesthetics and Wellness, back to top">
+      <img class="bar__logo-light" src="images/general_logo_white.png" alt="Williamson Aesthetics &amp; Wellness" width="2141" height="609"><img class="bar__logo-dark" src="images/general_logo.svg" alt="" width="260" height="94">
+    </a>
+    <nav class="bar__nav" aria-label="Page sections">
+      <a href="#quiz">Are you a candidate</a>
+      <a href="#results">Results</a>
+      <a href="#emface">Treatment</a>
+    </nav>
+    <a class="cta cta--bar" href="#contact"><span class="disc" aria-hidden="true"><span class="glyph glyph--out"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span><span class="glyph glyph--in"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span></span><span class="cta__label">Claim 20% Off</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <div class="face"><img class="hero__photo" src="images/web_emface-page-overview-navy.webp" alt="" width="2560" height="1600" fetchpriority="high"></div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="face face--spots" role="group" aria-label="Treatment zones">
+          <button type="button" class="spot spot--brow" popovertarget="zone-brow" aria-label="Brow: Lift. Show how EMFACE treats this area"><span class="spot__label"><span class="spot__zone">Brow</span><span class="spot__act">Lift</span></span><span class="spot__line"></span><span class="spot__mk"><svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></span></button>
+          <button type="button" class="spot spot--cheeks" popovertarget="zone-cheeks" aria-label="Cheeks: Volume support. Show how EMFACE treats this area"><span class="spot__label"><span class="spot__zone">Cheeks</span><span class="spot__act">Volume support</span></span><span class="spot__line"></span><span class="spot__mk"><svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></span></button>
+          <button type="button" class="spot spot--jaw" popovertarget="zone-jaw" aria-label="Jawline: Definition. Show how EMFACE treats this area"><span class="spot__label"><span class="spot__zone">Jawline</span><span class="spot__act">Definition</span></span><span class="spot__line"></span><span class="spot__mk"><svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></span></button>
+      </div>
+    </div>
+    <div class="hero__stage">
+      <div class="hero__copy">
+        <p class="eyebrow eyebrow--lav">Non-surgical facelift in Franklin, TN</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__l1">A <span class="nw">needle-free</span> facelift</span>
+          <em class="hero__l2">in Franklin, TN.</em>
+        </h1>
+        <p class="hero__sub">Brows drop, cheeks flatten and the jawline softens when the muscles underneath lose tone. EMFACE rebuilds that support and the collagen above it in 20-minute, needle-free sessions. No injections, no filler, no downtime.</p>
+        <p class="pill"><strong>20% off EMFACE</strong><span>Limited-time offer for new treatment plans</span></p>
+        <div class="cta-row">
+          <a class="cta cta--light" href="#contact"><span class="disc" aria-hidden="true"><span class="glyph glyph--out"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span><span class="glyph glyph--in"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span></span><span class="cta__label">Book a Free Consultation</span></a>
+          <a class="call" href="tel:+16292453491">Or call (629) 245-3491</a>
+        </div>
+      </div>
+    </div>
+  <div class="zone-card" id="zone-brow" popover role="dialog" aria-labelledby="zone-brow-title">
+    <div class="zone-card__top"><p class="eyebrow">Treatment zone</p><button type="button" class="zone-card__close" popovertarget="zone-brow" popovertargetaction="hide" aria-label="Close"><svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></button></div>
+    <h2 class="zone-card__title" id="zone-brow-title">Brow <em>lift</em></h2>
+    <p class="zone-card__body">The forehead applicator uses HIFES to strengthen the frontalis, the muscle that raises your brows, while radiofrequency warms the skin to build collagen and elastin. Over a series the brow sits a little higher and forehead lines soften, with no injections.</p>
+    <dl class="zone-card__facts"><div><dt>Works on</dt><dd>Frontalis muscle and forehead skin</dd></div><div><dt>You may notice</dt><dd>A more open, lifted brow and softer forehead lines</dd></div></dl>
+  </div>
+  <div class="zone-card" id="zone-cheeks" popover role="dialog" aria-labelledby="zone-cheeks-title">
+    <div class="zone-card__top"><p class="eyebrow">Treatment zone</p><button type="button" class="zone-card__close" popovertarget="zone-cheeks" popovertargetaction="hide" aria-label="Close"><svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></button></div>
+    <h2 class="zone-card__title" id="zone-cheeks-title">Cheek <em>support</em></h2>
+    <p class="zone-card__body">The cheek applicators contract the zygomaticus muscles that hold the mid-face up and firm the skin that sits over them. Cheeks regain a fuller, lifted shape that comes from your own tissue, not filler.</p>
+    <dl class="zone-card__facts"><div><dt>Works on</dt><dd>Zygomaticus muscles and cheek skin</dd></div><div><dt>You may notice</dt><dd>Fuller-looking cheeks and a lifted mid-face</dd></div></dl>
+  </div>
+  <div class="zone-card" id="zone-jaw" popover role="dialog" aria-labelledby="zone-jaw-title">
+    <div class="zone-card__top"><p class="eyebrow">Treatment zone</p><button type="button" class="zone-card__close" popovertarget="zone-jaw" popovertargetaction="hide" aria-label="Close"><svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></button></div>
+    <h2 class="zone-card__title" id="zone-jaw-title">Jawline <em>definition</em></h2>
+    <p class="zone-card__body">Lifting and firming the cheeks takes some of the weight off the lower face. As support builds, early jowls soften and the line of the jaw reads cleaner in profile and in photos.</p>
+    <dl class="zone-card__facts"><div><dt>Works on</dt><dd>Lower face support, from the mid-face up</dd></div><div><dt>You may notice</dt><dd>Softer early jowls and a crisper jaw line</dd></div></dl>
+  </div>
+  </section>
+
+  <section class="stats" aria-label="EMFACE at a glance">
+    <div class="stats__grid">
+      <div class="stat">
+        <p class="stat__fig"><span class="stat__num" data-count>20</span><span class="stat__unit">min</span></p>
+        <h2 class="stat__label">Per session</h2>
+        <p class="stat__body">Applicators do the work while you rest. Total visit about 30 to 40 minutes.</p>
+      </div>
+      <div class="stat">
+        <p class="stat__fig"><span class="stat__num" data-count>4</span><span class="stat__unit">visits</span></p>
+        <h2 class="stat__label">In a typical series</h2>
+        <p class="stat__body">Sessions are spaced about a week apart to build muscle tone and collagen.</p>
+      </div>
+      <div class="stat">
+        <p class="stat__fig"><span class="stat__num">0</span><span class="stat__unit">days</span></p>
+        <h2 class="stat__label">Of downtime</h2>
+        <p class="stat__body">Mild warmth or redness fades within an hour or two. Back to your day.</p>
+      </div>
+      <div class="stat">
+        <p class="stat__fig"><span class="stat__num" data-count>3</span><span class="stat__unit">months</span></p>
+        <h2 class="stat__label">To your fullest lift</h2>
+        <p class="stat__body">First changes show after session two or three, then keep building.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz" id="quiz" aria-labelledby="quiz-title">
+    <div class="quiz__intro">
+      <p class="eyebrow eyebrow--lav">Two-minute fit check</p>
+      <h2 class="quiz__title" id="quiz-title"><span>Is EMFACE right</span> <span class="quiz__t2">for <em>you?</em></span></h2>
+      <p class="quiz__body">Answer four quick questions about your goals and health. We will match you with a plan and hold your 20% off for your free consultation.</p>
+    </div>
+    <form class="console" data-quiz aria-live="polite">
+      <div class="console__top">
+        <p class="console__step" data-quiz-step>Question 1 of 4</p>
+        <button type="button" class="console__back" data-quiz-back>Back</button>
+      </div>
+      <div class="console__progress" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="console__q" role="group" aria-labelledby="quiz-q" data-quiz-body>
+        <p class="console__question" id="quiz-q" data-quiz-question>Which area would you most like to lift or smooth?</p>
+        <div class="console__options" data-quiz-options></div>
+      </div>
+      <div class="console__result">
+        <div class="console__rtext">
+          <p class="console__r1" data-quiz-r1>Likely match so far</p>
+          <p class="console__r2" data-quiz-r2>EMFACE lift series</p>
+        </div>
+        <button type="button" class="cta cta--light cta--btn" data-quiz-next><span class="disc" aria-hidden="true"><span class="glyph glyph--out"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span><span class="glyph glyph--in"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span></span><span class="cta__label">Next Question</span></button>
+      </div>
+    </form>
+  </section>
+
+  <section class="ba" id="results" aria-labelledby="ba-title">
+    <div class="ba__head">
+      <h2 class="h2 ba__title" id="ba-title"><span>Firmer contours,</span> <span class="ba__l2">with no <em>needles</em></span></h2>
+      <p class="ba__note">Results from EMFACE treatment series. Individual results vary.</p>
+    </div>
+    <div class="ba__tiles">
+      <figure class="ba-tile">
+        <div class="ba-tile__img"><img src="images/web_emface-before-after-jawline.webp" alt="Jawline and lower face before and after an EMFACE series" width="2170" height="725" loading="lazy"></div>
+        <div class="ba-tile__tags" aria-hidden="true"><span>Before</span><span class="is-after">After</span></div>
+        <figcaption class="ba-tile__cap"><span class="ba-tile__area">Jawline</span><span class="ba-tile__text">Jawline and lower face, after an EMFACE series</span></figcaption>
+      </figure>
+      <figure class="ba-tile">
+        <div class="ba-tile__img"><img src="images/web_gallery-emface-chin-before-after.webp" alt="Chin and neck profile before and after an EMFACE series" width="756" height="251" loading="lazy"></div>
+        <div class="ba-tile__tags" aria-hidden="true"><span>Before</span><span class="is-after">After</span></div>
+        <figcaption class="ba-tile__cap"><span class="ba-tile__area">Chin and neck</span><span class="ba-tile__text">Chin and neck profile, after an EMFACE series</span></figcaption>
+      </figure>
+    </div>
+    <div class="ba__ctas">
+      <a class="cta" href="#contact"><span class="disc" aria-hidden="true"><span class="glyph glyph--out"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span><span class="glyph glyph--in"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span></span><span class="cta__label">Claim My 20% Off</span></a>
+      <a class="cta cta--outline" href="#quiz"><span class="disc" aria-hidden="true"><span class="glyph glyph--out"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span><span class="glyph glyph--in"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span></span><span class="cta__label">See If You&rsquo;re a Candidate</span></a>
+    </div>
+  </section>
+
+  <section class="what" id="emface" aria-labelledby="what-title">
+    <div class="what__media">
+      <figure class="vcard vcard--a" data-video="images/emface-video_compressed.mp4">
+        <img class="vcard__poster" src="images/video-poster_emface-video.jpg" alt="" width="1080" height="1920" loading="lazy">
+        <span class="vcard__scrim" aria-hidden="true"></span>
+        <span class="vcard__tag">Watch&nbsp; 0:14</span>
+        <button type="button" class="vcard__play" aria-label="Play video: See EMFACE in action"><svg viewBox="0 0 14 16" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0l14 8-14 8z"/></svg></button>
+        <figcaption class="vcard__cap"><span class="vcard__title">See EMFACE in action</span><span class="vcard__body">A real session, applicators on, at our Franklin clinic.</span></figcaption>
+      </figure>
+      <figure class="icard">
+        <div class="icard__img"><img src="images/Emface_PIC_A012-C067_ENUS100_square.jpg" alt="EMFACE applicators placed on a client's forehead and cheeks" width="1002" height="1002" loading="lazy"></div>
+        <figcaption class="icard__cap"><span class="icard__title">Brow and cheek lift</span><span class="icard__body">Applicators sit flat on the forehead and cheeks.</span></figcaption>
+      </figure>
+    </div>
+    <div class="what__copy">
+      <p class="eyebrow">What is EMFACE</p>
+      <h2 class="what__title" id="what-title"><span>One <span class="nw">20-minute</span> session.</span> <em>Two layers of lift.</em></h2>
+      <p class="what__intro">EMFACE is a needle-free facial treatment by BTL. It works on the muscle that holds your brows and cheeks up and on the skin that sits over it, at the same time. A study in the Journal of Cosmetic Dermatology linked it to measurable soft-tissue lift.</p>
+      <div class="mechs">
+        <div class="mech"><h3>Radiofrequency</h3><p>Gently heats the skin to wake up collagen and elastin, smoothing fine lines and softening texture.</p></div>
+        <div class="mech"><h3>HIFES</h3><p>High-intensity facial electrical stimulation contracts the small muscles that support your brows, cheeks and jawline.</p></div>
+      </div>
+      <p class="eyebrow what__chips-label">Made for</p>
+      <div class="chips">
+        <ul><li>Forehead lines</li><li>Brow heaviness</li><li>Flattened cheeks</li></ul>
+        <ul><li>Early jowls</li><li>Fine lines</li><li>Mild skin laxity</li></ul>
+      </div>
+      <a class="cta what__cta" href="#contact"><span class="disc" aria-hidden="true"><span class="glyph glyph--out"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span><span class="glyph glyph--in"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span></span><span class="cta__label">Book a Free Consultation</span></a>
+    </div>
+  </section>
+
+  <section class="exp" aria-labelledby="exp-title">
+    <img class="exp__bg" src="images/web_emface-treatment-wave-graphic.webp" alt="" width="1440" height="1252" loading="lazy">
+    <div class="exp__left">
+      <div class="exp__head">
+        <h2 class="exp__title" id="exp-title">What a visit <em>feels like.</em></h2>
+        <p class="exp__sub">Plan on 30 to 40 minutes in the clinic. Most people book a series of four, about a week apart.</p>
+      </div>
+      <ol class="steps">
+        <li class="step"><div class="step__name"><h3>Consultation</h3><p>Free of charge</p></div><p class="step__body">We talk through your goals, watch how your face moves and confirm EMFACE is a safe fit.</p></li>
+        <li class="step"><div class="step__name"><h3>Preparation</h3><p>A few minutes</p></div><p class="step__body">Your skin is cleansed and the flat applicators are placed on your forehead and cheeks.</p></li>
+        <li class="step"><div class="step__name"><h3>Treatment</h3><p>About 20 minutes</p></div><p class="step__body">Radiofrequency and HIFES run together. Expect warmth and a tapping, contracting feel. Intensity is adjustable.</p></li>
+        <li class="step"><div class="step__name"><h3>Review</h3><p>Before you leave</p></div><p class="step__body">Applicators come off, we check your comfort and book your next session. You head straight back to your day.</p></li>
+      </ol>
+      <p class="exp__note">Afterward you may notice mild redness, warmth or tired muscles. These usually fade within an hour or two.</p>
+    </div>
+    <figure class="vcard vcard--b" data-video="images/emface-video3_compressed.mp4">
+      <img class="vcard__poster" src="images/video-poster_emface-video3.jpg" alt="" width="1080" height="1350" loading="lazy">
+      <span class="vcard__scrim" aria-hidden="true"></span>
+      <span class="vcard__tag">Watch&nbsp; 0:27</span>
+      <button type="button" class="vcard__play" aria-label="Play video: Inside a 20-minute session"><svg viewBox="0 0 14 16" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0l14 8-14 8z"/></svg></button>
+      <figcaption class="vcard__cap"><span class="vcard__title">Inside a 20-minute session</span><span class="vcard__body">Lie back, relax and let the applicators do the work.</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="cmp" aria-labelledby="cmp-title">
+    <div class="cmp__head">
+      <h2 class="cmp__title" id="cmp-title">How EMFACE <em>compares</em></h2>
+      <p class="cmp__sub">Each option has its place. EMFACE is built for early lift and lines, without needles.</p>
+      <p class="cmp__hint">Swipe the table to compare</p>
+    </div>
+    <div class="cmp__scroll" tabindex="0" role="region" aria-label="Comparison table, scrolls sideways on small screens">
+      <table class="cmp__table">
+        <caption class="sr-only">EMFACE compared with Botox, dermal fillers, a surgical facelift and HIFU</caption>
+        <thead>
+          <tr>
+            <td class="cmp__corner"></td>
+            <th scope="col" class="is-em"><span class="cmp__band">20% off through this page</span><span class="cmp__hd"><span class="cmp__name">EMFACE</span><span class="cmp__kind">Needle-free lift</span></span></th>
+            <th scope="col"><span class="cmp__hd"><span class="cmp__name">Botox</span><span class="cmp__kind">Neuromodulator</span></span></th>
+            <th scope="col"><span class="cmp__hd"><span class="cmp__name">Dermal fillers</span><span class="cmp__kind">Volume</span></span></th>
+            <th scope="col"><span class="cmp__hd"><span class="cmp__name">Surgical facelift</span><span class="cmp__kind">Surgery</span></span></th>
+            <th scope="col"><span class="cmp__hd"><span class="cmp__name">HIFU / Ultherapy</span><span class="cmp__kind">Ultrasound</span></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">How it works</th><td class="is-em">Builds muscle support and collagen</td><td>Relaxes muscles</td><td>Adds volume</td><td>Lifts and removes skin</td><td>Focused ultrasound</td></tr>
+          <tr><th scope="row">Needles or incisions</th><td class="is-em">None</td><td>Injections</td><td>Injections</td><td>Incisions</td><td>No needles</td></tr>
+          <tr><th scope="row">Session time</th><td class="is-em">About 20 min</td><td>Varies</td><td>Varies</td><td>Surgical procedure</td><td>60 to 90 min</td></tr>
+          <tr><th scope="row">Downtime</th><td class="is-em">None</td><td>Minimal</td><td>Minimal</td><td>Several weeks</td><td>Minimal</td></tr>
+          <tr><th scope="row">When results show</th><td class="is-em">Build over about 3 months</td><td>3 to 14 days</td><td>Immediate</td><td>After healing</td><td>2 to 3 months</td></tr>
+          <tr><th scope="row">Best for</th><td class="is-em">Early lift and lines, no needles</td><td>Expression lines</td><td>Volume loss and deep folds</td><td>Advanced sagging</td><td>Tightening under chin and brow</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <a class="cta" href="#contact"><span class="disc" aria-hidden="true"><span class="glyph glyph--out"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span><span class="glyph glyph--in"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span></span><span class="cta__label">Claim My 20% Off</span></a>
+    <p class="cmp__note">Williamson Aesthetics &amp; Wellness does not offer injectables. Advanced sagging may suit a surgeon, and we will tell you if so.</p>
+  </section>
+
+  <section class="rv" aria-labelledby="rv-title">
+    <div class="rv__head">
+      <div class="rv__title-wrap">
+        <p class="eyebrow">Google reviews</p>
+        <h2 class="rv__title" id="rv-title"><span>Lifted, and still</span> <em>looking like themselves.</em></h2>
+      </div>
+      <div class="rv__score">
+        <p class="rv__rating"><span class="rv__num">5.0</span><span class="stars stars--sm" aria-label="5 out of 5 stars"><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg></span></p>
+      </div>
+    </div>
+    <div class="rv__row">
+      <figure class="review">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg></span>
+        <blockquote class="review__quote"><p>I just started EMFACE treatments&hellip; and have had such a great experience so far. Dr. Chapman and Nancy are wonderful!</p></blockquote>
+        <figcaption class="review__who"><span class="review__ini" aria-hidden="true">CJ</span><span class="review__name"><span>Charlene J., Local Guide</span><span class="review__meta">EMFACE client, Google review</span></span></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg></span>
+        <blockquote class="review__quote"><p>Dr. Chapman and Nancy are both great! The procedure was calming and I actually feel asleep at my last appt. Highly recommend!!!</p></blockquote>
+        <figcaption class="review__who"><span class="review__ini" aria-hidden="true">DB</span><span class="review__name"><span>Devin B.</span><span class="review__meta">Google review</span></span></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg><svg viewBox="17 17 52 51" aria-hidden="true"><path d="M43.6 18.38l7.32 17.14 16.34 1.46c0.53 0.05 0.73 0.7 0.33 1.01l-12.72 11.39 4.75 17.44c0.15 0.52-0.41 0.89-0.86 0.62l-15.74-9.69-15.66 9.66c-0.46 0.29-1.01-0.09-0.85-0.61l4.72-17.42-12.78-11.39c-0.42-0.33-0.23-0.98 0.3-1.01l16.4-1.48 7.35-17.12c0.21-0.47 0.9-0.47 1.1 0z"/></svg></span>
+        <blockquote class="review__quote"><p>Nancy took great care and has excellent technique. The procedure was simple&hellip; I&rsquo;ll definitely be returning!</p></blockquote>
+        <figcaption class="review__who"><span class="review__ini" aria-hidden="true">DG</span><span class="review__name"><span>Denae G.</span><span class="review__meta">Exion client, Google review</span></span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="team" aria-labelledby="team-title">
+    <div class="team__head">
+      <div class="team__hl">
+        <p class="eyebrow eyebrow--lav">Your clinic and team</p>
+        <h2 class="team__title" id="team-title"><span>A Franklin practice built</span> <em>around your face.</em></h2>
+      </div>
+      <p class="team__intro">Williamson Aesthetics &amp; Wellness is a non-surgical aesthetics and wellness practice minutes from Cool Springs. We are a small, two-person team, so you see the same familiar faces at every visit, and every plan starts by listening to your goals.</p>
+    </div>
+    <div class="team__gallery">
+      <figure class="interior">
+        <img src="images/general_interior-waiting-area.jpg" alt="The waiting area at the Williamson Aesthetics and Wellness clinic in Franklin" width="1080" height="1419" loading="lazy">
+        <span class="interior__scrim" aria-hidden="true"></span>
+        <figcaption class="interior__cap"><span class="interior__t">Our Franklin clinic</span><span class="interior__b">1111 Battlewood St, Ste 3, Franklin</span></figcaption>
+      </figure>
+      <figure class="member">
+        <div class="member__img"><img src="images/general_dr-keith-chapman.webp" alt="Dr. Keith Chapman, DDS" width="1024" height="1448" loading="lazy"></div>
+        <figcaption class="member__text"><span class="member__name">Dr. Keith Chapman, DDS</span><span class="member__role">Owner</span><span class="member__bio">Leads the practice. Earned his DDS from UT Health Science Center at San Antonio in 1998 and listens to each client's goals before recommending anything.</span></figcaption>
+      </figure>
+      <figure class="member">
+        <div class="member__img"><img src="images/general_nancy-siphonexay-vadnais.png" alt="Nancy Siphonexay-Vadnais, Lead Esthetician" width="1051" height="1496" loading="lazy"></div>
+        <figcaption class="member__text"><span class="member__name">Nancy Siphonexay-Vadnais</span><span class="member__role">Lead Esthetician</span><span class="member__bio">9 years in aesthetics, 7 in advanced treatments. Performs every EMFACE session, from needle-free lifting to skin tightening.</span></figcaption>
+      </figure>
+    </div>
+    <div class="values">
+      <div class="value"><svg class="value__ico" viewBox="1.20 21.66 22.60 22.60" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="m9.21 28.19c0.4-3.23 2.95-5.53 5.85-5.53 3.33 0 6.03 2.67 6.03 6.27 0 2.4-1.05 3.87-2.03 5.19-1.03 1.36-1.69 2.68-1.94 4.58-0.37 3.36-1.98 4.56-3.67 4.56-1.47 0-2.72-1.34-2.81-3.1" /><path vector-effect="non-scaling-stroke" d="m11.24 31.91c-0.1-0.54-0.15-1.08-0.15-1.63 0-2.96 1.79-4.73 3.82-4.73 1.87 0 3.49 1.51 3.49 3.56 0 0.75-0.17 1.46-0.47 1.96" /><path vector-effect="non-scaling-stroke" d="m11.16 30.5c2.19 0 3.71 1.21 3.71 3.08 0 1.56-1.29 4.08-2.22 4.12" /><path vector-effect="non-scaling-stroke" d="m6.56 28.91c0.98 1.36 1.55 2.96 1.55 4.77 0 1.88-0.63 3.7-1.64 4.99" /><path vector-effect="non-scaling-stroke" d="m3.96 30.81c0.62 0.8 0.94 1.77 0.94 2.9 0 1.19-0.38 2.27-0.99 3.05" /></svg><h3>A listening ear</h3><p>Your goals and concerns are heard in full before any recommendation.</p></div>
+      <div class="value"><svg class="value__ico" viewBox="27.05 21.18 23.49 23.49" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="m33.65 25.43-2.52 0.37c-0.54 0.08-0.86 0.51-0.79 1.01l2.41 16.03c0.08 0.54 0.56 0.9 1.09 0.82l12.64-1.87c0.52-0.07 0.84-0.52 0.77-1.04l-2.42-16.05c-0.07-0.51-0.51-0.82-1.04-0.74l-2.51 0.37" /><path vector-effect="non-scaling-stroke" d="m40.15 23.23-1.38 0.18c-0.12-0.76-0.86-1.31-1.64-1.22-0.92 0.1-1.51 0.9-1.42 1.69l-1.1 0.15c-0.56 0.08-0.92 0.51-0.86 1.02l0.09 0.73c0.07 0.53 0.54 0.88 1.06 0.8l5.62-0.84c0.52-0.08 0.82-0.51 0.76-1.03l-0.07-0.6c-0.07-0.53-0.54-0.95-1.06-0.88z" /><path vector-effect="non-scaling-stroke" d="m33.75 31.25 0.97 0.68 1.19-1.97" /><path vector-effect="non-scaling-stroke" d="m37.84 30.52 4.97-0.81" /><path vector-effect="non-scaling-stroke" d="m34.34 35.06 0.98 0.6 1.14-1.93" /><path vector-effect="non-scaling-stroke" d="m38.37 34.29 4.96-0.76" /><path vector-effect="non-scaling-stroke" d="m34.92 38.78 0.97 0.63 1.16-1.87" /><path vector-effect="non-scaling-stroke" d="m38.89 38.03 5.08-0.73" /></svg><h3>Personalized plans</h3><p>Built around your skin, schedule and objectives, never a one-size-fits-all package.</p></div>
+      <div class="value"><svg class="value__ico" viewBox="53.22 21.53 25.78 25.78" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="m54.22 37.98c1.1-0.42 2.06-0.9 2.87-1.64 1.32-1.21 2.79-2.02 4.44-2.02 1.55 0 2.93 0.66 3.99 1.34 0.8 0.51 1.45 0.85 2.23 0.87l2.08 0.04c1.19 0.04 1.75 0.55 1.75 1.22 0 0.84-0.77 1.31-2.04 1.43-1.89 0.2-3.73 0.03-5.1-0.4" /><path vector-effect="non-scaling-stroke" d="m71.65 37.66c1.37-1.03 2.67-2.41 3.74-3.33 0.7-0.61 1.72-0.89 2.31-0.56 0.43 0.24 0.38 0.78-0.02 1.33-1.27 1.65-3.02 3.97-4.5 5.13-1.54 1.2-4.1 3.03-5.51 3.03-2.41 0-6.15-1.95-7.85-1.95-1.21 0-2.66 0.83-3.5 1.42" /><path vector-effect="non-scaling-stroke" d="m69.34 25.59c-0.94 0-1.75 0.54-2.07 1.27-0.41-0.7-1.17-1.17-2.05-1.17-1.29 0-2.3 1.02-2.3 2.36 0 1.08 0.68 2.03 1.79 3.1 0.86 0.82 1.94 1.69 2.62 2.22 0.82-0.61 1.93-1.54 2.77-2.43 0.99-1.06 1.56-1.93 1.56-2.91 0-1.37-1.07-2.44-2.32-2.44z" /></svg><h3>Honest expectations</h3><p>We explain what EMFACE can realistically achieve, how many sessions it may take and that results vary.</p></div>
+    </div>
+    <a class="cta cta--light" href="#contact"><span class="disc" aria-hidden="true"><span class="glyph glyph--out"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span><span class="glyph glyph--in"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span></span><span class="cta__label">Book a Free Consultation</span></a>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="contact__info">
+      <p class="eyebrow">Free consultation</p>
+      <h2 class="contact__title" id="contact-title"><span>Save 20% on your</span> <em>EMFACE series.</em></h2>
+      <p class="contact__body">Book a free consultation to claim your 20% off. We will check your suitability, map your zones and give you a personalized quote. Pricing is self-pay and not covered by insurance. Financing through Cherry is coming soon.</p>
+      <dl class="details">
+        <div class="detail"><dt><span class="detail__ico"><svg class="ico ico--pin" viewBox="16 5 48 70" preserveAspectRatio="none" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="M40.09 6.79c-12.38 0-22.43 10.43-22.43 23.18 0 4.73 1.26 8.22 3.98 13.11l17.35 29.69c0.31 0.51 0.75 0.73 1.13 0.73 0.45 0 0.92-0.22 1.2-0.73l17.35-29.69c2.84-4.97 3.98-8.79 3.98-13.24 0-12.56-10.11-23.05-22.56-23.05z m8.78 23.43a8.75 8.75 0 1 1-17.5 0 8.75 8.75 0 1 1 17.5 0z"/></svg></span>Visit</dt><dd><a href="https://maps.app.goo.gl/9oYUnouNZh1jetcj8" target="_blank" rel="noopener">1111 Battlewood St, Ste 3, Franklin, TN 37069</a></dd></div>
+        <div class="detail"><dt><span class="detail__ico"><svg class="ico ico--phone" viewBox="22 12 44 58" preserveAspectRatio="none" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="M63.42 44.85l-6.73-4.09c-0.9-0.53-2.01-0.4-2.76 0.33l-1.99 1.96c-0.7 0.68-1.68 0.79-2.6 0.22-5.03-3.22-11.12-10.03-13.41-14.62-0.55-1.13-0.32-2.13 0.5-2.86l2.34-2c0.88-0.76 1.09-2.01 0.58-3.05l-4.01-7.78c-0.77-1.45-2.46-1.89-4.06-1.1-1.76 0.96-3.62 2.4-4.72 3.81-1.18 1.5-1.74 3.3-1.74 5.42 0.16 13.53 18.62 33.79 30.7 34.02 2.78 0.08 4.9-0.86 6.61-2.94 0.98-1.23 1.95-2.76 2.38-3.92 0.47-1.33 0.11-2.73-1.09-3.4z"/></svg></span>Call</dt><dd><a href="tel:+16292453491">(629) 245-3491</a></dd></div>
+        <div class="detail"><dt><span class="detail__ico"><svg class="ico ico--clock" viewBox="10 21 49 49" preserveAspectRatio="none" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="M57.79 45.13a23.08 23.08 0 1 1-46.16 0 23.08 23.08 0 1 1 46.16 0z m-23.05-16.97v15.27m1.07 2.62l9.51 9.49"/></svg></span>Hours</dt><dd>Tue and Fri 10am to 6pm. Sat 10am to 4pm.</dd></div>
+      </dl>
+      <div class="map">
+        <iframe class="map__frame" title="Map to Williamson Aesthetics and Wellness, 1111 Battlewood St, Franklin" src="https://maps.google.com/maps?q=Williamson%20Aesthetics%20%26%20Wellness%2C%201111%20Battlewood%20St%20Ste%203%2C%20Franklin%2C%20TN%2037069&amp;ll=35.9967651,-86.8824347&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <span class="map__tint" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <form class="form" data-form novalidate>
+      <p class="form__tag">20% off your EMFACE series</p>
+      <h3 class="form__title">Request your free consultation</h3>
+      <p class="form__sub">Share a few details and our team will call to confirm a time that suits you.</p>
+      <div class="form__row">
+        <label class="field"><span>First name</span><input name="first_name" autocomplete="given-name" placeholder="First name" required></label>
+        <label class="field"><span>Last name</span><input name="last_name" autocomplete="family-name" placeholder="Last name" required></label>
+      </div>
+      <div class="form__row">
+        <label class="field"><span>Phone number</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(629) 000-0000" required></label>
+        <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+      </div>
+      <label class="field"><span>What would you like to improve?</span><textarea name="message" rows="3" placeholder="Tell us about your goals, for example a heavier brow, flatter cheeks or a softer jawline."></textarea></label>
+      <label class="consent"><input type="checkbox" name="consent" required><span class="consent__box" aria-hidden="true"><svg class="check" viewBox="26 30 28 21" preserveAspectRatio="none" aria-hidden="true"><path d="M27.71 41.48l7.96 7.87 17.13-17.14" vector-effect="non-scaling-stroke"/></svg></span><span class="consent__text">I agree to be contacted by Williamson Aesthetics &amp; Wellness by phone, text or email about my consultation. Message and data rates may apply.</span></label>
+      <p class="form__error" data-form-error role="alert"></p>
+      <button class="form__submit" type="submit"><span data-submit-label>Claim my 20% off</span></button>
+      <p class="form__terms">Offer applies to new EMFACE treatment plans booked through this page. Cannot be combined with other offers.</p>
+    </form>
+  </section>
+
+  <section class="faq" aria-labelledby="faq-title">
+    <div class="faq__intro">
+      <p class="eyebrow">Questions, answered</p>
+      <h2 class="faq__title" id="faq-title"><span>Before you</span> <em>book.</em></h2>
+      <p class="faq__body">Still deciding? Call <a href="tel:+16292453491">(629) 245-3491</a> and talk it through with our team.</p>
+    </div>
+    <div class="faq__list">
+      <details class="qa"><summary>How much does EMFACE cost?<svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></summary><div class="qa__a"><p>Pricing is personalized and quoted at your consultation, usually as a series of four. It is self-pay and not covered by insurance. Book through this page to save 20% on your series.</p></div></details>
+      <details class="qa"><summary>Does it hurt?<svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></summary><div class="qa__a"><p>Most people describe warmth and a tapping, contracting sensation. Your provider adjusts the intensity to keep you comfortable, and no numbing cream is needed.</p></div></details>
+      <details class="qa"><summary>How long is a session?<svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></summary><div class="qa__a"><p>The treatment itself takes about 20 minutes while you lie back and relax. Plan on 30 to 40 minutes for the whole visit, then head straight back to work or errands.</p></div></details>
+      <details class="qa"><summary>When will I see results?<svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></summary><div class="qa__a"><p>Many clients notice a fresher, more lifted look after the second or third session. Results keep building for several weeks after your final visit, with the fullest change around three months later. Results vary from person to person.</p></div></details>
+      <details class="qa"><summary>How many sessions do I need?<svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></summary><div class="qa__a"><p>Most clients complete four sessions spaced about a week apart. Nancy confirms the right number at your consultation, and many people add periodic maintenance visits to keep results going.</p></div></details>
+      <details class="qa"><summary>Is EMFACE like Botox?<svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></summary><div class="qa__a"><p>They work in opposite ways. Neurotoxins relax muscles to soften expression lines, while EMFACE strengthens the muscles that support the face and stimulates collagen, with no injections. We do not offer injectables, but we will explain the differences honestly.</p></div></details>
+      <details class="qa"><summary>Am I a candidate?<svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></summary><div class="qa__a"><p>Good candidates are adults who want to soften fine lines, lift the brow or cheeks, or firm mild laxity without needles or surgery. People with pacemakers, metal implants in the face or who are pregnant should not be treated.</p></div></details>
+      <details class="qa"><summary>Is there any downtime?<svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></summary><div class="qa__a"><p>No. Some clients see mild redness or warmth that usually settles within an hour. You can wear makeup, go back to work and follow your normal routine the same day.</p></div></details>
+      <details class="qa"><summary>Can I combine treatments?<svg class="plus" viewBox="6 5 38 40" preserveAspectRatio="none" aria-hidden="true"><path class="plus__v" d="M24.93 6.14v37.72" vector-effect="non-scaling-stroke"/><path d="M7.26 25h35.41" vector-effect="non-scaling-stroke"/></svg></summary><div class="qa__a"><p>Yes. EMFACE pairs well with Exion Face for needle-free firming and RF microneedling for texture and pores. Nancy can sequence these so each one supports the others, based on your skin and your schedule.</p></div></details>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="final-title">
+    <img class="final__photo" src="images/web_emface-page-hero-applicators.webp" alt="" width="4096" height="1996" loading="lazy" data-parallax="0.5">
+    <div class="final__stage">
+      <div class="final__scrim" aria-hidden="true"></div>
+      <div class="final__copy">
+        <p class="eyebrow eyebrow--lav">Limited-time offer</p>
+        <h2 class="final__title" id="final-title"><span class="final__l1">Brow, cheeks, jawline.</span> <em class="final__l2">Start training today.</em></h2>
+        <p class="final__body">Book a free consultation to claim your 20% off. Your series could be underway next week.</p>
+        <div class="cta-row">
+          <a class="cta cta--light" href="#contact"><span class="disc" aria-hidden="true"><span class="glyph glyph--out"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span><span class="glyph glyph--in"><svg viewBox="3 38 79 8.5" preserveAspectRatio="none" aria-hidden="true"><path d="M4.17 42.23h76.81m-3.65-3.24l3.69 3.24-3.69 3.19" vector-effect="non-scaling-stroke"/></svg></span></span><span class="cta__label">Claim My 20% Off</span></a>
+          <a class="call" href="tel:+16292453491">Or call (629) 245-3491</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot__cols">
+    <div class="foot__brand">
+      <a class="foot__logo" href="#top" aria-label="Williamson Aesthetics and Wellness, back to top"><img src="images/general_logo_white.png" alt="" width="2141" height="609" loading="lazy"></a>
+      <p>Aesthetics and wellness, elevated in Franklin, TN.</p>
+    </div>
+    <div class="foot__col">
+      <h2>Contact Us</h2>
+      <ul>
+        <li><a href="https://maps.app.goo.gl/9oYUnouNZh1jetcj8" target="_blank" rel="noopener">1111 Battlewood St, Ste 3</a></li>
+        <li>Franklin, TN 37069</li>
+        <li><a href="tel:+16292453491">(629) 245-3491</a></li>
+        <li><a href="mailto:info@williamson-wellness.com">info@williamson-wellness.com</a></li>
+      </ul>
+    </div>
+    <div class="foot__col">
+      <h2>Hours</h2>
+      <ul>
+        <li>Tuesday 10am to 6pm</li>
+        <li>Friday 10am to 6pm</li>
+        <li>Saturday 10am to 4pm</li>
+        <li>Closed other days</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<template id="tpl-check"><svg class="check" viewBox="26 30 28 21" preserveAspectRatio="none" aria-hidden="true"><path d="M27.71 41.48l7.96 7.87 17.13-17.14" vector-effect="non-scaling-stroke"/></svg></template>
+
+<!-- GSAP core first, then plugins (version pinned) -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/CustomEase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.min.js"></script>
+<script>
+/* Fluid artboard: --vw follows the layout width (scrollbar excluded), like the live site's setFluidScale */
+(() => {
+  const root = document.documentElement;
+  const set = () => root.style.setProperty('--vw', (document.body?.clientWidth || root.clientWidth) + 'px');
+  set();
+  addEventListener('resize', set, { passive: true });
+})();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const STACK_MQ = matchMedia('(width < 64rem), (orientation: portrait) and (width < 75rem)');
+  const DESKTOP = () => !STACK_MQ.matches;
+  const TOUCH = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const U = () => Math.min(document.body.clientWidth, 1920) / 1440;
+  const hasGsap = typeof window.gsap !== 'undefined';
+
+  /* ---------------------------------------------------------------- GSAP setup (guide section 2) */
+  let lenis = null;
+  if (hasGsap) {
+    gsap.registerPlugin(ScrollTrigger, CustomEase);
+    CustomEase.create('wwIntro', 'M0,0 C0.16,1 0.3,1 1,1');
+    CustomEase.create('wwHero', 'M0,0 C0.33,1 0.68,1 1,1');
+    CustomEase.create('wwSwap', 'M0,0 C0.65,0 0.35,1 1,1');
+    CustomEase.create('cssEase', 'M0,0 C0.25,0.1 0.25,1 1,1');
+    gsap.config({ nullTargetWarn: false });
+    gsap.defaults({ ease: 'power3.out', duration: 0.6 });
+
+    if (!REDUCED && !TOUCH && typeof window.Lenis !== 'undefined') {
+      lenis = new Lenis({ duration: 1.2, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(time => lenis.raf(time * 1000));
+      gsap.ticker.lagSmoothing(0);
+      document.documentElement.classList.add('has-lenis');
+      document.addEventListener('visibilitychange', () => (document.hidden ? lenis.stop() : lenis.start()));
+    }
+    let rT;
+    addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(() => ScrollTrigger.refresh(), 200); });
+  }
+
+  /* ---------------------------------------------------------------- touch screens: hover effects play on tap
+     Cards keep their highlighted state until another card or empty space is tapped.
+     Links and buttons flash their hover state long enough for the arrow swap to read. */
+  (() => {
+    const NOHOVER = matchMedia('(hover: none), (pointer: coarse)');
+    const STICKY = '.mech, .chips li, .step, .review, .value, .ba-tile, .icard, .member, .interior, .cmp__table tbody tr';
+    const FLASH = '.cta, .call, .more, .bar__nav a, .vcard, .detail dd a, .form__submit, .qa summary, .foot__logo, .foot__col a, .qopt, .console__back';
+    let held = null;
+    document.addEventListener('click', e => {
+      const touch = e.pointerType ? e.pointerType !== 'mouse' : NOHOVER.matches;
+      if (!touch) return;
+      const flash = e.target.closest(FLASH);
+      if (flash) {
+        flash.classList.add('is-tap');
+        clearTimeout(flash._tapT);
+        flash._tapT = setTimeout(() => flash.classList.remove('is-tap'), 900);
+      }
+      const card = e.target.closest(STICKY);
+      if (held && held !== card) held.classList.remove('is-tap');
+      if (card && !flash) { held = card.classList.toggle('is-tap') ? card : null; }
+      else if (!card) held = null;
+    });
+  })();
+
+  /* ---------------------------------------------------------------- in-page links */
+  const bar = document.querySelector('[data-bar]');
+  document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    const target = id === '#top' ? document.body : document.querySelector(id);
+    if (!target) return;
+    if (lenis) {
+      e.preventDefault();
+      lenis.scrollTo(id === '#top' ? 0 : target, { offset: -bar.offsetHeight, duration: 1.2 });
+      history.replaceState(null, '', id);
+    }
+  }));
+
+  /* ---------------------------------------------------------------- header: transparent over the hero, frosted once the page scrolls past it */
+  (() => {
+    const hero = document.querySelector('.hero');
+    if (!bar || !hero) return;
+    let ticking = false;
+    const check = () => {
+      ticking = false;
+      bar.classList.toggle('is-solid', scrollY > hero.offsetHeight - bar.offsetHeight - 1);
+    };
+    check();
+    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(check); } }, { passive: true });
+    addEventListener('resize', check, { passive: true });
+  })();
+
+  /* ---------------------------------------------------------------- hero intro (C1, adapted to a full-bleed photo) */
+  if (hasGsap && !REDUCED) {
+    const big = DESKTOP();
+    const rise = n => (big ? n * U() : 60);
+    const tl = gsap.timeline({ defaults: { ease: 'wwHero' } });
+    tl.from(bar, { yPercent: -100, duration: 1.1 }, 0)
+      .from(bar, { opacity: 0, duration: 1.1 }, 0)
+      .from('.hero__photo', { opacity: 0, scale: 1.06, duration: 1.6, ease: 'wwIntro' }, 0.2)
+      .from('.hero__copy', { y: rise(426), duration: 1.4 }, 0.55)
+      .from('.hero__copy', { opacity: 0, duration: 1.4 * 0.45 }, 0.55)
+      .from('.spot__mk', { opacity: 0, scale: 0.4, duration: 0.6, stagger: 0.12 }, 1.2);
+    if (big) {
+      tl.from('.spot__line', { scaleX: 0, duration: 0.9, ease: 'wwIntro', stagger: 0.12 }, 1.2)
+        .from('.spot__label', { opacity: 0, x: -16 * U(), duration: 0.8, ease: 'wwIntro', stagger: 0.12 }, 1.45);
+    }
+  }
+
+  /* ---------------------------------------------------------------- hero zone cards (native popovers) */
+  (() => {
+    const cards = document.querySelectorAll('.zone-card');
+    if (!cards.length) return;
+    let openY = 0;
+    const place = (card, btn) => {
+      if (!DESKTOP()) {
+        // phones and tablets: just under the plus sign, flipped above it when there is no room below
+        const mk = btn.querySelector('.spot__mk').getBoundingClientRect();
+        const w = card.offsetWidth, h = card.offsetHeight, m = 12, gap = 18;
+        const left = Math.max(m, Math.min(mk.left + mk.width / 2 - w / 2, innerWidth - w - m));
+        let top = mk.bottom + gap;
+        if (top + h > innerHeight - m) top = Math.max(m, mk.top - gap - h);
+        card.style.left = left + 'px'; card.style.top = top + 'px';
+        return;
+      }
+      const mk = btn.querySelector('.spot__mk').getBoundingClientRect();
+      const w = card.offsetWidth, h = card.offsetHeight, m = 16;
+      const left = Math.min(mk.right + 28 * U(), innerWidth - w - m);
+      const top = Math.max(m, Math.min(mk.top + mk.height / 2 - 48 * U(), innerHeight - h - m));
+      card.style.left = left + 'px'; card.style.top = top + 'px';
+    };
+    cards.forEach(card => {
+      const btn = document.querySelector(`[popovertarget="${card.id}"].spot`);
+      // hide the card until it has been measured and moved next to its marker, so it never flashes at the corner
+      card.addEventListener('beforetoggle', e => {
+        if (e.newState === 'open') card.style.visibility = 'hidden';
+      });
+      card.addEventListener('toggle', e => {
+        const open = e.newState === 'open';
+        btn?.setAttribute('aria-expanded', open);
+        if (!open) { card.style.visibility = ''; return; }
+        openY = scrollY;
+        place(card, btn);
+        card.style.visibility = '';
+        if (hasGsap && !REDUCED) gsap.fromTo(card, { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: 0.4, ease: 'wwIntro', clearProps: 'transform,opacity,visibility' });
+        card.querySelector('.zone-card__close')?.focus({ preventScroll: true });
+      });
+      btn?.setAttribute('aria-expanded', 'false');
+    });
+    addEventListener('scroll', () => {
+      const open = document.querySelector('.zone-card:popover-open');
+      if (open && Math.abs(scrollY - openY) > 80) open.hidePopover();
+    }, { passive: true });
+    addEventListener('resize', () => document.querySelector('.zone-card:popover-open')?.hidePopover());
+  })();
+
+  /* ---------------------------------------------------------------- site-wide rise reveal (B3) */
+  (() => {
+    if (!hasGsap || REDUCED) return;
+    const HARD = 'main h2, main .ba-tile, main .vcard, main .icard, main .cmp__scroll, main .interior, main .member, main .review, main .console, main .form, main .map';
+    const SOFT = 'main p:not(.stat__fig), main li:not(.chips li), main .eyebrow, main .cta, main .more, main dl, main .qa, main .chips ul';
+    const SKIP = '.hero, .bar, .stats, .console, .form, .map, .zone-card, [data-no-rise]';
+    const seen = new Set();
+    const pick = (sel, dist) => [...document.querySelectorAll(sel)].filter(el => {
+      if (seen.has(el)) return false;
+      const host = el.closest(SKIP);
+      if (host && host !== el) return false;
+      if (el.parentElement.closest('[data-rise]')) return false;
+      if (el.getBoundingClientRect().top < innerHeight) return false;
+      return true;
+    }).map(el => { seen.add(el); el.dataset.rise = dist; return el; });
+    const targets = [...pick(HARD, 40), ...pick(SOFT, 24)]
+      .sort((a, b) => (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
+    // +90ms per card in the same row
+    document.querySelectorAll('.rv__row, .team__gallery, .values, .mechs').forEach(row => {
+      const tops = new Map();
+      [...row.children].forEach(c => {
+        const t = Math.round(c.offsetTop), n = tops.get(t) ?? 0;
+        tops.set(t, n + 1); c.dataset.rowDelay = n * 0.09;
+      });
+    });
+    targets.forEach(el => gsap.set(el, { opacity: 0, y: +el.dataset.rise * (DESKTOP() ? U() : 0.8) }));
+    ScrollTrigger.batch(targets, {
+      start: 'top bottom-=40',
+      once: true,
+      onEnter: batch => batch.forEach((el, i) => gsap.to(el, {
+        opacity: 1, y: 0, duration: 0.9, ease: 'wwIntro',
+        delay: Math.min(i, 7) * 0.07 + (+el.dataset.rowDelay || 0),
+        clearProps: 'transform,opacity'
+      }))
+    });
+  })();
+
+  /* ---------------------------------------------------------------- stats: rise + count up (B7) */
+  (() => {
+    const stats = document.querySelector('.stats');
+    if (!stats || !hasGsap || REDUCED) return;
+    const items = [...stats.querySelectorAll('.stat')];
+    items.forEach(it => { const n = it.querySelector('[data-count]'); if (n) { n.dataset.target = n.textContent.trim(); n.textContent = '0'; } });
+    gsap.set(items, { opacity: 0, y: 24 * (DESKTOP() ? U() : 1) });
+    ScrollTrigger.create({
+      trigger: stats, start: 'top 85%', once: true,
+      onEnter: () => items.forEach((it, i) => {
+        const d = i * 0.12;
+        gsap.to(it, { opacity: 1, y: 0, duration: 0.7, ease: 'wwIntro', delay: d, clearProps: 'transform,opacity' });
+        const n = it.querySelector('[data-count]'); if (!n) return;
+        const end = parseFloat(n.dataset.target), o = { v: 0 };
+        gsap.to(o, { v: end, duration: 1.4, delay: d + 0.15, ease: 'power2.out', onUpdate: () => { n.textContent = Math.round(o.v); }, onComplete: () => { n.textContent = n.dataset.target; } });
+      })
+    });
+  })();
+
+  /* ---------------------------------------------------------------- comparison: fade beside the sticky column once the table is swiped */
+  document.querySelectorAll('.cmp__scroll').forEach(sc => sc.addEventListener('scroll', () => sc.classList.toggle('is-scrolled', sc.scrollLeft > 4), { passive: true }));
+
+  /* ---------------------------------------------------------------- comparison columns: EMFACE column settles first */
+  if (hasGsap && !REDUCED) {
+    const t = document.querySelector('.cmp__table');
+    if (t) {
+      const em = t.querySelectorAll('.is-em');
+      gsap.from(em, { opacity: 0, y: 16, duration: 0.7, ease: 'wwIntro', stagger: 0.05, scrollTrigger: { trigger: t, start: 'top 85%', once: true }, clearProps: 'transform,opacity' });
+    }
+  }
+
+  /* ---------------------------------------------------------------- quiz */
+  (() => {
+    const form = document.querySelector('[data-quiz]');
+    if (!form) return;
+    const CHECK = document.getElementById('tpl-check').innerHTML;
+    const Q = [
+      { q: 'Which area would you most like to lift or smooth?', multi: true, opts: [
+        ['brow', 'Forehead lines and a heavier brow'], ['cheek', 'Cheeks that look flatter than before'],
+        ['jawline', 'Softening along the jawline'], ['eye', 'Fine lines around the eyes']] },
+      { q: 'How would you describe the change you see?', opts: [
+        ['early', 'Early signs, my skin is still fairly firm'], ['mild', 'Some sagging I notice in photos'],
+        ['deep', 'Volume loss and deeper folds'], ['unsure', 'I am not sure yet']] },
+      { q: 'What matters most to you in a treatment?', opts: [
+        ['needles', 'No needles or injections'], ['downtime', 'No downtime at all'],
+        ['natural', 'Natural-looking results'], ['quick', 'Short, easy appointments']] },
+      { q: 'Do any of these apply to you?', multi: true, none: 'none', opts: [
+        ['preg', 'Pregnant or breastfeeding'], ['pace', 'Pacemaker or electronic implant'],
+        ['metal', 'Metal implants in the face'], ['none', 'None of these apply to me']] }
+    ];
+    const ans = Q.map(() => new Set());
+    let step = 0;
+    const $ = s => form.querySelector(s);
+    const stepEl = $('[data-quiz-step]'), qEl = $('[data-quiz-question]'), optsEl = $('[data-quiz-options]');
+    const r1 = $('[data-quiz-r1]'), r2 = $('[data-quiz-r2]'), next = $('[data-quiz-next]'), back = $('[data-quiz-back]');
+    const segs = [...form.querySelectorAll('.console__progress span')];
+    const nextLabel = next.querySelector('.cta__label');
+    const body = $('[data-quiz-body]');
+
+    const zones = () => {
+      const order = ['cheek', 'brow', 'jawline', 'eye'];
+      const z = order.filter(k => ans[0].has(k)).map(k => (k === 'eye' ? 'eye area' : k));
+      if (!z.length) return '';
+      return z.length === 1 ? z[0] : z.slice(0, -1).join(', ') + ' and ' + z.at(-1);
+    };
+    const risky = () => ['preg', 'pace', 'metal'].some(k => ans[3].has(k));
+    const match = () => {
+      if (risky()) return ['Talk with our team first', 'A safe plan built around your health'];
+      if (ans[1].has('deep')) return ['Worth a closer look', 'EMFACE consultation to confirm fit'];
+      const z = zones();
+      return [step >= Q.length ? 'Your match' : 'Likely match so far', z ? `EMFACE ${z} lift series` : 'EMFACE lift series'];
+    };
+    const summary = () => Q.map((q, i) => q.opts.filter(([k]) => ans[i].has(k)).map(([, l]) => l).join(', ')).filter(Boolean);
+
+    const render = (animate = true) => {
+      const done = step >= Q.length;
+      stepEl.textContent = done ? 'Your result' : `Question ${step + 1} of ${Q.length}`;
+      segs.forEach((s, i) => s.classList.toggle('is-done', i < Math.min(step + 1, Q.length)));
+      back.disabled = step === 0;
+      const [a, b] = match();
+      r1.textContent = a; r2.textContent = b;
+      if (done) {
+        qEl.textContent = risky() ? 'Let us check a few things first.' : 'You look like a good fit for EMFACE.';
+        optsEl.innerHTML = '';
+        const p = document.createElement('p');
+        p.className = 'console__summary';
+        p.textContent = risky()
+          ? 'One of your answers means EMFACE may not be right for you today. Our team will walk through safe options at your free consultation, and your 20% off stays on hold.'
+          : 'We will confirm your plan at a free consultation and hold your 20% off. Your answers are added to the request form below.';
+        optsEl.append(p);
+        optsEl.style.gridTemplateColumns = '1fr';
+        nextLabel.textContent = 'Claim My 20% Off';
+        next.removeAttribute('aria-disabled');
+      } else {
+        const q = Q[step];
+        qEl.textContent = q.q;
+        optsEl.style.gridTemplateColumns = '';
+        optsEl.innerHTML = q.opts.map(([k, l]) =>
+          `<button type="button" class="qopt" data-k="${k}" aria-pressed="${ans[step].has(k)}"><span class="qopt__label">${l}</span><span class="qopt__box">${CHECK}</span></button>`).join('');
+        nextLabel.textContent = step === Q.length - 1 ? 'See My Match' : 'Next Question';
+        next.setAttribute('aria-disabled', ans[step].size ? 'false' : 'true');
+      }
+      if (animate && hasGsap && !REDUCED) {
+        gsap.fromTo([qEl, ...optsEl.children], { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: 0.35, ease: 'power2.out', stagger: 0.04, clearProps: 'transform' });
+      }
+    };
+
+    optsEl.addEventListener('click', e => {
+      const btn = e.target.closest('.qopt'); if (!btn) return;
+      const q = Q[step], set = ans[step], k = btn.dataset.k;
+      if (!q.multi) set.clear();
+      if (q.multi && set.has(k)) set.delete(k);
+      else {
+        if (q.none) { if (k === q.none) set.clear(); else set.delete(q.none); }
+        set.add(k);
+      }
+      optsEl.querySelectorAll('.qopt').forEach(b => b.setAttribute('aria-pressed', set.has(b.dataset.k)));
+      next.setAttribute('aria-disabled', set.size ? 'false' : 'true');
+      const [a, b] = match(); r1.textContent = a; r2.textContent = b;
+    });
+    next.addEventListener('click', () => {
+      if (step >= Q.length) {
+        const msg = document.querySelector('.form textarea');
+        if (msg && !msg.value) msg.value = 'From the fit check: ' + summary().join('. ') + '.';
+        const c = document.getElementById('contact');
+        if (lenis) lenis.scrollTo(c, { offset: -bar.offsetHeight }); else c.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth' });
+        setTimeout(() => document.querySelector('.form input')?.focus({ preventScroll: true }), lenis ? 1300 : 600);
+        return;
+      }
+      if (!ans[step].size) {
+        if (hasGsap && !REDUCED) gsap.fromTo(optsEl, { x: -6 }, { x: 0, duration: 0.4, ease: 'elastic.out(1,0.4)' });
+        r1.textContent = 'Pick at least one answer';
+        return;
+      }
+      step++; render();
+    });
+    back.addEventListener('click', () => { if (step > 0) { step--; render(); } });
+    render(false);
+  })();
+
+  /* ---------------------------------------------------------------- FAQ: height animation (A11 with ANIMATE_FAQ on) */
+  document.querySelectorAll('details.qa').forEach(d => {
+    const sum = d.querySelector('summary'), ans = d.querySelector('.qa__a');
+    sum.addEventListener('click', e => {
+      if (!hasGsap || REDUCED) return;
+      e.preventDefault();
+      const opening = !d.open;
+      gsap.killTweensOf(ans);
+      if (opening) {
+        d.open = true;
+        gsap.fromTo(ans, { height: 0, opacity: 0 }, { height: 'auto', opacity: 1, duration: 0.35, ease: 'power2.out', clearProps: 'height,opacity', onComplete: () => ScrollTrigger.refresh() });
+      } else {
+        gsap.to(ans, { height: 0, opacity: 0, duration: 0.25, ease: 'power1.inOut', onComplete: () => { d.open = false; gsap.set(ans, { clearProps: 'height,opacity' }); ScrollTrigger.refresh(); } });
+      }
+    });
+  });
+
+  /* ---------------------------------------------------------------- video cards */
+  document.querySelectorAll('.vcard[data-video]').forEach(card => {
+    const play = card.querySelector('.vcard__play');
+    play.addEventListener('click', () => {
+      let v = card.querySelector('video');
+      if (!v) {
+        v = document.createElement('video');
+        v.src = card.dataset.video; v.controls = true; v.playsInline = true; v.preload = 'auto';
+        v.poster = card.querySelector('.vcard__poster').src;
+        v.setAttribute('aria-label', play.getAttribute('aria-label').replace('Play video: ', ''));
+        card.append(v);
+        v.addEventListener('ended', () => { card.classList.remove('is-playing'); v.remove(); play.focus(); });
+      }
+      card.classList.add('is-playing');
+      if (hasGsap && !REDUCED) gsap.from(v, { opacity: 0, duration: 0.35, ease: 'cssEase' });
+      v.play().catch(() => {});
+      v.focus();
+    });
+  });
+
+  /* ---------------------------------------------------------------- consultation form */
+  (() => {
+    const form = document.querySelector('[data-form]');
+    if (!form) return;
+    const err = form.querySelector('[data-form-error]');
+    const btn = form.querySelector('.form__submit'), label = form.querySelector('[data-submit-label]');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      err.textContent = '';
+      if (!form.checkValidity()) {
+        const bad = form.querySelector(':invalid');
+        err.textContent = bad?.name === 'consent' ? 'Please agree to be contacted so we can confirm your time.' : 'Please fill in your name, phone number and a valid email.';
+        bad?.focus();
+        return;
+      }
+      btn.disabled = true;
+      const idle = label.textContent;
+      label.textContent = 'Sending';
+      try {
+        const endpoint = form.dataset.endpoint;
+        if (endpoint) {
+          const res = await fetch(endpoint, { method: 'POST', body: new FormData(form) });
+          if (!res.ok) throw new Error(res.status);
+        }
+        const done = document.createElement('div');
+        done.className = 'form__done';
+        done.setAttribute('role', 'status');
+        done.innerHTML = '<p class="form__tag">20% off held for you</p><h3 class="form__title">Thank you. We will call you shortly.</h3><p>Our team will reach out to confirm a consultation time. Prefer to talk now? Call <a href="tel:+16292453491">(629) 245-3491</a>.</p>';
+        form.replaceChildren(done);
+        if (hasGsap && !REDUCED) gsap.from(done.children, { autoAlpha: 0, y: 12, duration: 0.4, ease: 'wwIntro', stagger: 0.06 });
+      } catch {
+        btn.disabled = false; label.textContent = idle;
+        err.textContent = 'Something went wrong. Please call (629) 245-3491 and we will book you in.';
+      }
+    });
+  })();
+
+  if (hasGsap) {
+    document.fonts?.ready.then(() => ScrollTrigger.refresh());
+    addEventListener('load', () => ScrollTrigger.refresh());
+  }
+});
+
+</script>
+</body>
+</html>
