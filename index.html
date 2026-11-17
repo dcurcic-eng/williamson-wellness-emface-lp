@@ -1973,22 +1973,62 @@ document.addEventListener('DOMContentLoaded', () => {
         bad?.focus();
         return;
       }
+      const val = n => (form.elements[n]?.value || '').trim();
+      const email = val('email');
+      if (!/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email)) {
+        err.textContent = 'Please enter a valid email address.';
+        form.elements.email.focus();
+        return;
+      }
+      /* accept any formatting, e.g. (629) 000-0000 or +1 629 000 0000, and send +1XXXXXXXXXX */
+      let phone = val('phone').replace(/\D/g, '');
+      if (phone.length === 11 && phone[0] === '1') phone = phone.slice(1);
+      if (!/^[0-9]{10}$/.test(phone)) {
+        err.textContent = 'Please enter a 10-digit US phone number.';
+        form.elements.phone.focus();
+        return;
+      }
       btn.disabled = true;
       const idle = label.textContent;
       label.textContent = 'Sending';
+
+      const fd = new FormData();
+      fd.append('first_name', val('first_name'));
+      fd.append('last_name', val('last_name'));
+      fd.append('phone', `+1${phone}`);
+      fd.append('email', email);
+      fd.append('checkbox', form.elements.consent.checked ? 'on' : '');
+      fd.append('organization', '490e509a-2262-4d66-96a6-0697260c34e7');
+      fd.append('form', '628');
+      fd.append('message', val('message'));
+      fd.append('form_location', window.location.href);
+
+      /* ad click id from the URL */
+      const urlParams = new URLSearchParams(window.location.search);
+      const trackingMap = { gclid: 'google', wbraid: 'google', gbraid: 'google', fbclid: 'meta', ttclid: 'tiktok' };
+      let trackingParam = '', adSource = 'other';
+      for (const [param, source] of Object.entries(trackingMap)) {
+        const v = urlParams.get(param);
+        if (v) { trackingParam = v; adSource = source; break; }
+      }
+      fd.append('tracking_param', trackingParam);
+      fd.append('ad_source', adSource);
+
       try {
-        const endpoint = form.dataset.endpoint;
-        if (endpoint) {
-          const res = await fetch(endpoint, { method: 'POST', body: new FormData(form) });
-          if (!res.ok) throw new Error(res.status);
-        }
+        const res = await fetch('https://api.aevadigital.com/api/v1/contacts/add_contact_from_form/', { method: 'POST', body: fd });
+        if (!res.ok) throw new Error((await res.text().catch(() => '')) || res.statusText || 'Server error');
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'form-success' });
+
         const done = document.createElement('div');
         done.className = 'form__done';
         done.setAttribute('role', 'status');
         done.innerHTML = '<p class="form__tag">20% off held for you</p><h3 class="form__title">Thank you. We will call you shortly.</h3><p>Our team will reach out to confirm a consultation time. Prefer to talk now? Call <a href="tel:+16292453491">(629) 245-3491</a>.</p>';
         form.replaceChildren(done);
         if (hasGsap && !REDUCED) gsap.from(done.children, { autoAlpha: 0, y: 12, duration: 0.4, ease: 'wwIntro', stagger: 0.06 });
-      } catch {
+      } catch (e) {
+        console.error(e);
         btn.disabled = false; label.textContent = idle;
         err.textContent = 'Something went wrong. Please call (629) 245-3491 and we will book you in.';
       }
